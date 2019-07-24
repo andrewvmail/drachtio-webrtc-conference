@@ -1,0 +1,15 @@
+connected to mediaserver listening on {"ipv4":{"udp":{"address":"175.25.50.122:5060"},"dtls":{"address":"175.25.50.122:5061"}},"ipv6":{"udp":{},"dtls":{}}}
+successfully connected to drachtio listening on ws/192.168.99.1:80,wss/192.168.99.1:443,ws/175.25.50.121:80,udp/175.25.50.121:5040,ws/175.25.50.122:80,ws/127.0.0.1:80,udp/127.0.0.1:5040,udp/192.168.99.1:5040,wss/175.25.50.121:443,wss/175.25.50.122:443,wss/127.0.0.1:443,udp/175.25.50.122:5040
+(node:86957) UnhandledPromiseRejectionWarning: Error: Connection timeout
+    at MediaServer.timeoutFn (/Users/andrew/projects/kosmos/conference-controller/node_modules/drachtio-fsmrf/lib/mediaserver.js:290:18)
+    at ontimeout (timers.js:498:11)
+    at tryOnTimeout (timers.js:323:5)
+    at Timer.listOnTimeout (timers.js:290:5)
+(node:86957) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 1)
+(node:86957) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+events.js:183
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: connect ECONNREFUSED 127.0.0.1:9022
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1191:14)

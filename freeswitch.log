@@ -1,0 +1,165 @@
+freeswitch@momomac.local> recv 2428 bytes from udp/[175.25.50.122]:5040 at 18:05:30.427510:
+   ------------------------------------------------------------------------
+   INVITE sip:drachtio@175.25.50.122:5060 SIP/2.0
+   Via: SIP/2.0/UDP 175.25.50.122:5040;rport;branch=z9hG4bKv0argSDDD7rDS
+   Max-Forwards: 70
+   From: <sip:175.25.50.122:5040>;tag=pKSQQv17t9myj
+   To: <sip:drachtio@175.25.50.122:5060>
+   Call-ID: f8dbb4cc-2851-1238-3db1-51150d009c6b
+   CSeq: 7411373 INVITE
+   Contact: <sip:175.25.50.122:5040>
+   User-Agent: drachtio-fsmrf:33b5086c-e65c-443a-b12d-e927ba6187c0
+   Content-Type: application/sdp
+   Content-Length: 1941
+   X-esl-outbound: 175.25.50.122:59852
+   
+   v=0
+   o=- 7072020807327639604 2 IN IP4 127.0.0.1
+   s=-
+   t=0 0
+   a=group:BUNDLE audio
+   a=msid-semantic: WMS 4BAEE9A5-0317-4D27-8ADA-8CA713E129D1
+   m=audio 58388 UDP/TLS/RTP/SAVPF 111 103 104 9 102 0 8 106 105 13 110 112 113 126
+   c=IN IP4 206.116.9.145
+   a=rtcp:9 IN IP4 0.0.0.0
+   a=candidate:3845939934 1 udp 2122260223 175.25.50.118 58388 typ host generation 0 network-id 1 network-cost 10
+   a=candidate:4137036234 1 udp 2122194687 25.12.195.106 63520 typ host generation 0 network-id 4 network-cost 900
+   a=candidate:1685349482 1 udp 1686052607 206.116.9.145 58388 typ srflx raddr 175.25.50.118 rport 58388 generation 0 network-id 1 network-cost 10
+   a=candidate:2011049854 1 udp 1685987071 209.52.88.106 3539 typ srflx raddr 25.12.195.106 rport 63520 generation 0 network-id 4 network-cost 900
+   a=candidate:2881461806 1 tcp 1518280447 175.25.50.118 52117 typ host tcptype passive generation 0 network-id 1 network-cost 10
+   a=ice-ufrag:VjkN
+   a=ice-pwd:0VQoY6ZrXyldJwORGWvs3pYa
+   a=ice-options:trickle renomination
+   a=fingerprint:sha-256 97:EE:C9:E6:A4:BA:8E:97:26:80:39:3B:96:C5:2B:51:1D:B6:C5:C1:19:D0:09:BD:45:AC:C3:E7:42:6A:B0:FE
+   a=setup:actpass
+   a=mid:audio
+   a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+   a=sendrecv
+   a=rtcp-mux
+   a=rtpmap:111 opus/48000/2
+   a=rtcp-fb:111 transport-cc
+   a=fmtp:111 minptime=10;useinbandfec=1
+   a=rtpmap:103 ISAC/16000
+   a=rtpmap:104 ISAC/32000
+   a=rtpmap:9 G722/8000
+   a=rtpmap:102 ILBC/8000
+   a=rtpmap:0 PCMU/8000
+   a=rtpmap:8 PCMA/8000
+   a=rtpmap:106 CN/32000
+   a=rtpmap:105 CN/16000
+   a=rtpmap:13 CN/8000
+   a=rtpmap:110 telephone-event/48000
+   a=rtpmap:112 telephone-event/32000
+   a=rtpmap:113 telephone-event/16000
+   a=rtpmap:126 telephone-event/8000
+   a=ssrc:633521117 cname:BqwD0lnDiEfhYb2a
+   a=ssrc:633521117 msid:4BAEE9A5-0317-4D27-8ADA-8CA713E129D1 00555AFA-417C-4155-8EE3-1239E2153956
+   a=ssrc:633521117 mslabel:4BAEE9A5-0317-4D27-8ADA-8CA713E129D1
+   a=ssrc:633521117 label:00555AFA-417C-4155-8EE3-1239E2153956
+   ------------------------------------------------------------------------
+send 301 bytes to udp/[175.25.50.122]:5040 at 18:05:30.430582:
+   ------------------------------------------------------------------------
+   SIP/2.0 100 Trying
+   Via: SIP/2.0/UDP 175.25.50.122:5040;rport=5040;branch=z9hG4bKv0argSDDD7rDS
+   From: <sip:175.25.50.122:5040>;tag=pKSQQv17t9myj
+   To: <sip:drachtio@175.25.50.122:5060>
+   Call-ID: f8dbb4cc-2851-1238-3db1-51150d009c6b
+   CSeq: 7411373 INVITE
+   User-Agent: drachtio MRF
+   Content-Length: 0
+   
+   ------------------------------------------------------------------------
+2019-07-23 18:05:30.421448 [NOTICE] switch_channel.c:1104 New Channel sofia/drachtio_mrf/nobody@175.25.50.122:5040 [77ff7c01-c56b-425c-9feb-a9305db778b9]
+2019-07-23 18:05:30.431432 [INFO] mod_dialplan_xml.c:637 Processing unknown <>->drachtio in context mrf
+2019-07-23 18:05:30.431432 [WARNING] switch_core_media.c:3451 NO candidate ACL defined, Defaulting to wan.auto
+2019-07-23 18:05:30.431432 [INFO] switch_core_media.c:7055 Activating Audio ICE
+2019-07-23 18:05:30.431432 [NOTICE] switch_rtp.c:4636 Activating RTP audio ICE: VjkN:cumUlYrAkF75Jm05 175.25.50.118:58388
+2019-07-23 18:05:30.431432 [INFO] switch_core_media.c:7107 Skipping RTCP ICE (Same as RTP)
+2019-07-23 18:05:30.431432 [INFO] switch_rtp.c:3603 Activate RTP/RTCP audio DTLS client
+2019-07-23 18:05:30.431432 [INFO] switch_rtp.c:3752 Changing audio DTLS state from OFF to HANDSHAKE
+2019-07-23 18:05:30.431432 [NOTICE] sofia_media.c:92 Pre-Answer sofia/drachtio_mrf/nobody@175.25.50.122:5040!
+send 1605 bytes to udp/[175.25.50.122]:5040 at 18:05:30.440200:
+   ------------------------------------------------------------------------
+   SIP/2.0 200 OK
+   Via: SIP/2.0/UDP 175.25.50.122:5040;rport=5040;branch=z9hG4bKv0argSDDD7rDS
+   From: <sip:175.25.50.122:5040>;tag=pKSQQv17t9myj
+   To: <sip:drachtio@175.25.50.122:5060>;tag=DStHejQvN8UDm
+   Call-ID: f8dbb4cc-2851-1238-3db1-51150d009c6b
+   CSeq: 7411373 INVITE
+   Contact: <sip:drachtio@175.25.50.122:5060;transport=udp>
+   User-Agent: drachtio MRF
+   Accept: application/sdp
+   Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY
+   Supported: path, replaces
+   Allow-Events: talk, hold, conference, refer
+   Content-Type: application/sdp
+   Content-Disposition: session
+   Content-Length: 888
+   Remote-Party-ID: "drachtio" <sip:drachtio@175.25.50.122>;party=calling;privacy=off;screen=no
+   
+   v=0
+   o=FreeSWITCH 1563898122 1563898123 IN IP4 175.25.50.122
+   s=FreeSWITCH
+   c=IN IP4 175.25.50.122
+   t=0 0
+   a=msid-semantic: WMS VssPTvEE0fUTv8qldfR3rwOJaUVRoR76
+   m=audio 32208 UDP/TLS/RTP/SAVPF 111 110
+   a=rtpmap:111 opus/48000/2
+   a=fmtp:111 useinbandfec=1; minptime=10
+   a=rtpmap:110 telephone-event/48000
+   a=ptime:20
+   a=fingerprint:sha-256 03:EF:E0:C3:7F:8A:48:FF:B3:CE:7E:E1:E0:D6:52:AD:F2:BC:41:96:0E:AB:68:B1:C4:C3:53:3A:84:F1:B5:EF
+   a=setup:active
+   a=rtcp-mux
+   a=rtcp:32208 IN IP4 175.25.50.122
+   a=ice-ufrag:cumUlYrAkF75Jm05
+   a=ice-pwd:2P13ukaoK1ygw8l0JnqzbYLj
+   a=candidate:0723330610 1 udp 659136 175.25.50.122 32208 typ host generation 0
+   a=end-of-candidates
+   a=ssrc:1758347098 cname:v8c5etYp989JslH7
+   a=ssrc:1758347098 msid:VssPTvEE0fUTv8qldfR3rwOJaUVRoR76 a0
+   a=ssrc:1758347098 mslabel:VssPTvEE0fUTv8qldfR3rwOJaUVRoR76
+   a=ssrc:1758347098 label:VssPTvEE0fUTv8qldfR3rwOJaUVRoR76a0
+   ------------------------------------------------------------------------
+recv 342 bytes from udp/[175.25.50.122]:5040 at 18:05:30.445307:
+   ------------------------------------------------------------------------
+   ACK sip:drachtio@175.25.50.122:5060;transport=udp SIP/2.0
+   Via: SIP/2.0/UDP 175.25.50.122:5040;rport;branch=z9hG4bKX93gjmygagF0m
+   Max-Forwards: 70
+   From: <sip:175.25.50.122:5040>;tag=pKSQQv17t9myj
+   To: <sip:drachtio@175.25.50.122:5060>;tag=DStHejQvN8UDm
+   Call-ID: f8dbb4cc-2851-1238-3db1-51150d009c6b
+   CSeq: 7411373 ACK
+   Content-Length: 0
+   
+   ------------------------------------------------------------------------
+recv 342 bytes from udp/[175.25.50.122]:5040 at 18:05:34.450760:
+   ------------------------------------------------------------------------
+   BYE sip:drachtio@175.25.50.122:5060;transport=udp SIP/2.0
+   Via: SIP/2.0/UDP 175.25.50.122:5040;rport;branch=z9hG4bKyjX9KFFm7r5jg
+   Max-Forwards: 70
+   From: <sip:175.25.50.122:5040>;tag=pKSQQv17t9myj
+   To: <sip:drachtio@175.25.50.122:5060>;tag=DStHejQvN8UDm
+   Call-ID: f8dbb4cc-2851-1238-3db1-51150d009c6b
+   CSeq: 7411374 BYE
+   Content-Length: 0
+   
+   ------------------------------------------------------------------------
+2019-07-23 18:05:34.451502 [NOTICE] sofia.c:1012 Hangup sofia/drachtio_mrf/nobody@175.25.50.122:5040 [CS_EXECUTE] [NORMAL_CLEARING]
+send 429 bytes to udp/[175.25.50.122]:5040 at 18:05:34.452751:
+   ------------------------------------------------------------------------
+   SIP/2.0 200 OK
+   Via: SIP/2.0/UDP 175.25.50.122:5040;rport=5040;branch=z9hG4bKyjX9KFFm7r5jg
+   From: <sip:175.25.50.122:5040>;tag=pKSQQv17t9myj
+   To: <sip:drachtio@175.25.50.122:5060>;tag=DStHejQvN8UDm
+   Call-ID: f8dbb4cc-2851-1238-3db1-51150d009c6b
+   CSeq: 7411374 BYE
+   User-Agent: drachtio MRF
+   Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY
+   Supported: path, replaces
+   Content-Length: 0
+   
+   ------------------------------------------------------------------------
+2019-07-23 18:05:34.451502 [NOTICE] mod_dptools.c:1312 Channel [sofia/drachtio_mrf/nobody@175.25.50.122:5040] has been answered
+2019-07-23 18:05:34.451502 [NOTICE] switch_core_session.c:1683 Session 3 (sofia/drachtio_mrf/nobody@175.25.50.122:5040) Ended
+2019-07-23 18:05:34.451502 [NOTICE] switch_core_session.c:1687 Close Channel sofia/drachtio_mrf/nobody@175.25.50.122:5040 [CS_DESTROY]

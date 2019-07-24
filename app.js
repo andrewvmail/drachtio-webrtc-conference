@@ -28,7 +28,7 @@ mrf.connect(
         endpoint.api('hupall')
           .then((response) => {
             console.log(`${JSON.stringify(response)}`);
-            
+
             ms.createConference('my_conf', {maxMembers: 50})
               .then((conference) => {
                 return endpoint.join(conference)
@@ -36,12 +36,7 @@ mrf.connect(
               .then(() => {
                 console.log('endpoint joined to conference')
               });
-
           });
-
-
-
-
 
       });
     });
