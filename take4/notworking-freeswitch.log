@@ -1,0 +1,364 @@
+freeswitch@Andrews-MacBook-Air.local> console loglevel debug
+
++OK console log level set to DEBUG
+
+freeswitch@Andrews-MacBook-Air.local> 
+freeswitch@Andrews-MacBook-Air.local> 
+freeswitch@Andrews-MacBook-Air.local> 
+freeswitch@Andrews-MacBook-Air.local> 
+freeswitch@Andrews-MacBook-Air.local> recv 2313 bytes from tcp/[192.168.50.127]:53990 at 10:06:35.503783:
+   ------------------------------------------------------------------------
+   INVITE sip:drachtio@192.168.50.127:5060 SIP/2.0
+   Via: SIP/2.0/TCP 192.168.50.127:5040;rport;branch=z9hG4bKBU3vjNZ2Ugecg
+   Max-Forwards: 70
+   From: <sip:192.168.50.127:5040>;tag=c44Z45m8D1BvD
+   To: <sip:drachtio@192.168.50.127:5060>
+   Call-ID: 3bebff65-28d8-1238-fa92-07091b6d5f8a
+   CSeq: 7440205 INVITE
+   Contact: <sip:192.168.50.127:5040>
+   User-Agent: drachtio-fsmrf:0d549068-13ab-4994-a35c-01bf2c40cae9
+   Content-Type: application/sdp
+   Content-Length: 1820
+   X-esl-outbound: 192.168.50.127:53989
+   
+   v=0
+   o=- 3755027099754366185 2 IN IP4 127.0.0.1
+   s=-
+   t=0 0
+   a=group:BUNDLE audio
+   a=msid-semantic: WMS 4EF65FDD-C6DD-4330-B148-DF87A370F062
+   m=audio 59152 UDP/TLS/RTP/SAVPF 111 103 104 9 102 0 8 106 105 13 110 112 113 126
+   c=IN IP4 172.103.161.49
+   a=rtcp:9 IN IP4 0.0.0.0
+   a=candidate:1085197679 1 udp 2122260223 192.168.50.70 59152 typ host generation 0 network-id 1 network-cost 10
+   a=candidate:4137036234 1 udp 2122194687 25.12.195.106 50605 typ host generation 0 network-id 4 network-cost 900
+   a=candidate:3253128155 1 udp 1686052607 172.103.161.49 59152 typ srflx raddr 192.168.50.70 rport 59152 generation 0 network-id 1 network-cost 10
+   a=candidate:2011049854 1 udp 1685987071 209.52.88.106 12714 typ srflx raddr 25.12.195.106 rport 50605 generation 0 network-id 4 network-cost 900
+   a=ice-ufrag:ywfn
+   a=ice-pwd:88Ok0k+sxAKOky6Z/jnMLYKs
+   a=ice-options:trickle renomination
+   a=fingerprint:sha-256 74:D9:FF:14:00:B1:6A:61:67:5A:E5:BD:CF:D9:0C:1B:57:7F:C3:4A:32:CB:A7:56:AC:39:B1:D6:FA:0E:B4:52
+   a=setup:actpass
+   a=mid:audio
+   a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+   a=sendrecv
+   a=rtcp-mux
+   a=rtpmap:111 opus/48000/2
+   a=rtcp-fb:111 transport-cc
+   a=fmtp:111 minptime=10;useinbandfec=1
+   a=rtpmap:103 ISAC/16000
+   a=rtpmap:104 ISAC/32000
+   a=rtpmap:9 G722/8000
+   a=rtpmap:102 ILBC/8000
+   a=rtpmap:0 PCMU/8000
+   a=rtpmap:8 PCMA/8000
+   a=rtpmap:106 CN/32000
+   a=rtpmap:105 CN/16000
+   a=rtpmap:13 CN/8000
+   a=rtpmap:110 telephone-event/48000
+   a=rtpmap:112 telephone-event/32000
+   a=rtpmap:113 telephone-event/16000
+   a=rtpmap:126 telephone-event/8000
+   a=ssrc:2635439786 cname:/T2Z+3oqnoJF4wbM
+   a=ssrc:2635439786 msid:4EF65FDD-C6DD-4330-B148-DF87A370F062 A97CF0D2-39C9-456F-BFD0-B0FE32B0F650
+   a=ssrc:2635439786 mslabel:4EF65FDD-C6DD-4330-B148-DF87A370F062
+   a=ssrc:2635439786 label:A97CF0D2-39C9-456F-BFD0-B0FE32B0F650
+   ------------------------------------------------------------------------
+send 305 bytes to tcp/[192.168.50.127]:53990 at 10:06:35.504100:
+   ------------------------------------------------------------------------
+   SIP/2.0 100 Trying
+   Via: SIP/2.0/TCP 192.168.50.127:5040;rport=53990;branch=z9hG4bKBU3vjNZ2Ugecg
+   From: <sip:192.168.50.127:5040>;tag=c44Z45m8D1BvD
+   To: <sip:drachtio@192.168.50.127:5060>
+   Call-ID: 3bebff65-28d8-1238-fa92-07091b6d5f8a
+   CSeq: 7440205 INVITE
+   User-Agent: drachtio MRF
+   Content-Length: 0
+   
+   ------------------------------------------------------------------------
+2019-07-24 10:06:35.495706 [NOTICE] switch_channel.c:1104 New Channel sofia/drachtio_mrf/nobody@192.168.50.127:5040 [3178fc23-3b08-4097-b9e9-64158e698a81]
+2019-07-24 10:06:35.495706 [DEBUG] switch_core_state_machine.c:584 (sofia/drachtio_mrf/nobody@192.168.50.127:5040) Running State Change CS_NEW (Cur 1 Tot 3)
+2019-07-24 10:06:35.495706 [DEBUG] sofia.c:9873 sofia/drachtio_mrf/nobody@192.168.50.127:5040 receiving invite from 192.168.50.127:53990 version: 1.6.20 git 987c9b9 2018-01-23 21:49:09Z 64bit
+2019-07-24 10:06:35.495706 [DEBUG] sofia.c:7084 Channel sofia/drachtio_mrf/nobody@192.168.50.127:5040 entering state [received][100]
+2019-07-24 10:06:35.495706 [DEBUG] sofia.c:7094 Remote SDP:
+v=0
+o=- 3755027099754366185 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE audio
+a=msid-semantic: WMS 4EF65FDD-C6DD-4330-B148-DF87A370F062
+m=audio 59152 UDP/TLS/RTP/SAVPF 111 103 104 9 102 0 8 106 105 13 110 112 113 126
+c=IN IP4 172.103.161.49
+a=rtpmap:111 opus/48000/2
+a=fmtp:111 minptime=10;useinbandfec=1
+a=rtpmap:103 ISAC/16000
+a=rtpmap:104 ISAC/32000
+a=rtpmap:9 G722/8000
+a=rtpmap:102 ILBC/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:106 CN/32000
+a=rtpmap:105 CN/16000
+a=rtpmap:13 CN/8000
+a=rtpmap:110 telephone-event/48000
+a=rtpmap:112 telephone-event/32000
+a=rtpmap:113 telephone-event/16000
+a=rtpmap:126 telephone-event/8000
+a=rtcp:9 IN IP4 0.0.0.0
+a=candidate:1085197679 1 udp 2122260223 192.168.50.70 59152 typ host generation 0 network-id 1 network-cost 10
+a=candidate:4137036234 1 udp 2122194687 25.12.195.106 50605 typ host generation 0 network-id 4 network-cost 900
+a=candidate:3253128155 1 udp 1686052607 172.103.161.49 59152 typ srflx raddr 192.168.50.70 rport 59152 generation 0 network-id 1 network-cost 10
+a=candidate:2011049854 1 udp 1685987071 209.52.88.106 12714 typ srflx raddr 25.12.195.106 rport 50605 generation 0 network-id 4 network-cost 900
+a=ice-ufrag:ywfn
+a=ice-pwd:88Ok0k+sxAKOky6Z/jnMLYKs
+a=ice-options:trickle renomination
+a=fingerprint:sha-256 74:D9:FF:14:00:B1:6A:61:67:5A:E5:BD:CF:D9:0C:1B:57:7F:C3:4A:32:CB:A7:56:AC:39:B1:D6:FA:0E:B4:52
+a=setup:actpass
+a=mid:audio
+a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+a=rtcp-mux
+a=rtcp-fb:111 transport-cc
+a=ssrc:2635439786 cname:/T2Z+3oqnoJF4wbM
+a=ssrc:2635439786 msid:4EF65FDD-C6DD-4330-B148-DF87A370F062 A97CF0D2-39C9-456F-BFD0-B0FE32B0F650
+a=ssrc:2635439786 mslabel:4EF65FDD-C6DD-4330-B148-DF87A370F062
+a=ssrc:2635439786 label:A97CF0D2-39C9-456F-BFD0-B0FE32B0F650
+
+2019-07-24 10:06:35.495706 [DEBUG] sofia.c:7486 (sofia/drachtio_mrf/nobody@192.168.50.127:5040) State Change CS_NEW -> CS_INIT
+2019-07-24 10:06:35.495706 [DEBUG] switch_core_state_machine.c:603 (sofia/drachtio_mrf/nobody@192.168.50.127:5040) State NEW
+2019-07-24 10:06:35.495706 [DEBUG] switch_core_state_machine.c:584 (sofia/drachtio_mrf/nobody@192.168.50.127:5040) Running State Change CS_INIT (Cur 1 Tot 3)
+2019-07-24 10:06:35.495706 [DEBUG] switch_core_state_machine.c:627 (sofia/drachtio_mrf/nobody@192.168.50.127:5040) State INIT
+2019-07-24 10:06:35.495706 [DEBUG] mod_sofia.c:90 sofia/drachtio_mrf/nobody@192.168.50.127:5040 SOFIA INIT
+2019-07-24 10:06:35.495706 [DEBUG] switch_core_state_machine.c:40 sofia/drachtio_mrf/nobody@192.168.50.127:5040 Standard INIT
+2019-07-24 10:06:35.495706 [DEBUG] switch_core_state_machine.c:48 (sofia/drachtio_mrf/nobody@192.168.50.127:5040) State Change CS_INIT -> CS_ROUTING
+2019-07-24 10:06:35.495706 [DEBUG] switch_core_state_machine.c:627 (sofia/drachtio_mrf/nobody@192.168.50.127:5040) State INIT going to sleep
+2019-07-24 10:06:35.495706 [DEBUG] switch_core_state_machine.c:584 (sofia/drachtio_mrf/nobody@192.168.50.127:5040) Running State Change CS_ROUTING (Cur 1 Tot 3)
+2019-07-24 10:06:35.495706 [DEBUG] switch_channel.c:2249 (sofia/drachtio_mrf/nobody@192.168.50.127:5040) Callstate Change DOWN -> RINGING
+2019-07-24 10:06:35.495706 [DEBUG] switch_core_state_machine.c:643 (sofia/drachtio_mrf/nobody@192.168.50.127:5040) State ROUTING
+2019-07-24 10:06:35.495706 [DEBUG] mod_sofia.c:143 sofia/drachtio_mrf/nobody@192.168.50.127:5040 SOFIA ROUTING
+2019-07-24 10:06:35.495706 [DEBUG] switch_core_state_machine.c:236 sofia/drachtio_mrf/nobody@192.168.50.127:5040 Standard ROUTING
+2019-07-24 10:06:35.495706 [INFO] mod_dialplan_xml.c:637 Processing unknown <>->drachtio in context mrf
+Dialplan: sofia/drachtio_mrf/nobody@192.168.50.127:5040 parsing [mrf->socket] continue=false
+Dialplan: sofia/drachtio_mrf/nobody@192.168.50.127:5040 Regex (PASS) [socket] ${sip_user_agent}(drachtio-fsmrf:0d549068-13ab-4994-a35c-01bf2c40cae9) =~ /^drachtio-fsmrf:(.*)$/ break=on-false
+Dialplan: sofia/drachtio_mrf/nobody@192.168.50.127:5040 Action answer() 
+Dialplan: sofia/drachtio_mrf/nobody@192.168.50.127:5040 Action socket(${sip_h_X-esl-outbound} async full) 
+2019-07-24 10:06:35.495706 [DEBUG] switch_core_state_machine.c:286 (sofia/drachtio_mrf/nobody@192.168.50.127:5040) State Change CS_ROUTING -> CS_EXECUTE
+2019-07-24 10:06:35.495706 [DEBUG] switch_core_state_machine.c:643 (sofia/drachtio_mrf/nobody@192.168.50.127:5040) State ROUTING going to sleep
+2019-07-24 10:06:35.495706 [DEBUG] switch_core_state_machine.c:584 (sofia/drachtio_mrf/nobody@192.168.50.127:5040) Running State Change CS_EXECUTE (Cur 1 Tot 3)
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_state_machine.c:650 (sofia/drachtio_mrf/nobody@192.168.50.127:5040) State EXECUTE
+2019-07-24 10:06:35.506239 [DEBUG] mod_sofia.c:198 sofia/drachtio_mrf/nobody@192.168.50.127:5040 SOFIA EXECUTE
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_state_machine.c:328 sofia/drachtio_mrf/nobody@192.168.50.127:5040 Standard EXECUTE
+EXECUTE sofia/drachtio_mrf/nobody@192.168.50.127:5040 answer()
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4449 Audio Codec Compare [opus:111:48000:20:0:1]/[opus:116:48000:20:0:1]
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4504 Audio Codec Compare [opus:116:48000:20:0:1] ++++ is saved as a match
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4449 Audio Codec Compare [opus:111:48000:20:0:1]/[G722:9:8000:20:64000:1]
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4449 Audio Codec Compare [opus:111:48000:20:0:1]/[PCMU:0:8000:20:64000:1]
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4449 Audio Codec Compare [opus:111:48000:20:0:1]/[PCMA:8:8000:20:64000:1]
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4449 Audio Codec Compare [ISAC:103:16000:30:32000:1]/[opus:116:48000:20:0:1]
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4449 Audio Codec Compare [ISAC:103:16000:30:32000:1]/[G722:9:8000:20:64000:1]
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4449 Audio Codec Compare [ISAC:103:16000:30:32000:1]/[PCMU:0:8000:20:64000:1]
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4449 Audio Codec Compare [ISAC:103:16000:30:32000:1]/[PCMA:8:8000:20:64000:1]
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4449 Audio Codec Compare [ISAC:104:32000:30:32000:1]/[opus:116:48000:20:0:1]
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4449 Audio Codec Compare [ISAC:104:32000:30:32000:1]/[G722:9:8000:20:64000:1]
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4449 Audio Codec Compare [ISAC:104:32000:30:32000:1]/[PCMU:0:8000:20:64000:1]
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4449 Audio Codec Compare [ISAC:104:32000:30:32000:1]/[PCMA:8:8000:20:64000:1]
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4449 Audio Codec Compare [G722:9:8000:20:64000:1]/[opus:116:48000:20:0:1]
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4449 Audio Codec Compare [G722:9:8000:20:64000:1]/[G722:9:8000:20:64000:1]
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4504 Audio Codec Compare [G722:9:8000:20:64000:1] ++++ is saved as a match
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4449 Audio Codec Compare [G722:9:8000:20:64000:1]/[PCMU:0:8000:20:64000:1]
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4449 Audio Codec Compare [G722:9:8000:20:64000:1]/[PCMA:8:8000:20:64000:1]
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4449 Audio Codec Compare [ILBC:102:8000:30:13330:1]/[opus:116:48000:20:0:1]
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4449 Audio Codec Compare [ILBC:102:8000:30:13330:1]/[G722:9:8000:20:64000:1]
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4449 Audio Codec Compare [ILBC:102:8000:30:13330:1]/[PCMU:0:8000:20:64000:1]
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4449 Audio Codec Compare [ILBC:102:8000:30:13330:1]/[PCMA:8:8000:20:64000:1]
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4449 Audio Codec Compare [PCMU:0:8000:20:64000:1]/[opus:116:48000:20:0:1]
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4449 Audio Codec Compare [PCMU:0:8000:20:64000:1]/[G722:9:8000:20:64000:1]
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4449 Audio Codec Compare [PCMU:0:8000:20:64000:1]/[PCMU:0:8000:20:64000:1]
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4504 Audio Codec Compare [PCMU:0:8000:20:64000:1] ++++ is saved as a match
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4449 Audio Codec Compare [PCMU:0:8000:20:64000:1]/[PCMA:8:8000:20:64000:1]
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4449 Audio Codec Compare [PCMA:8:8000:20:64000:1]/[opus:116:48000:20:0:1]
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4449 Audio Codec Compare [PCMA:8:8000:20:64000:1]/[G722:9:8000:20:64000:1]
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4449 Audio Codec Compare [PCMA:8:8000:20:64000:1]/[PCMU:0:8000:20:64000:1]
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4449 Audio Codec Compare [PCMA:8:8000:20:64000:1]/[PCMA:8:8000:20:64000:1]
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4504 Audio Codec Compare [PCMA:8:8000:20:64000:1] ++++ is saved as a match
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4449 Audio Codec Compare [CN:105:16000:20:0:1]/[opus:116:48000:20:0:1]
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4449 Audio Codec Compare [CN:105:16000:20:0:1]/[G722:9:8000:20:64000:1]
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4449 Audio Codec Compare [CN:105:16000:20:0:1]/[PCMU:0:8000:20:64000:1]
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4449 Audio Codec Compare [CN:105:16000:20:0:1]/[PCMA:8:8000:20:64000:1]
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4449 Audio Codec Compare [CN:13:8000:20:0:1]/[opus:116:48000:20:0:1]
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4449 Audio Codec Compare [CN:13:8000:20:0:1]/[G722:9:8000:20:64000:1]
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4449 Audio Codec Compare [CN:13:8000:20:0:1]/[PCMU:0:8000:20:64000:1]
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4449 Audio Codec Compare [CN:13:8000:20:0:1]/[PCMA:8:8000:20:64000:1]
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4365 Set telephone-event payload to 110@48000
+2019-07-24 10:06:35.506239 [DEBUG] mod_opus.c:603 Opus encoder: set bitrate to local settings [72000bps]
+2019-07-24 10:06:35.506239 [DEBUG] mod_opus.c:603 Opus encoder: set bitrate to local settings [72000bps]
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:3061 Set Codec sofia/drachtio_mrf/nobody@192.168.50.127:5040 opus/48000 20 ms 960 samples 0 bits 1 channels
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_codec.c:111 sofia/drachtio_mrf/nobody@192.168.50.127:5040 Original read codec set to opus:116
+2019-07-24 10:06:35.506239 [WARNING] switch_core_media.c:3451 NO candidate ACL defined, Defaulting to wan.auto
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:3481 Save audio Candidate cid: 1 proto: udp type: host addr: 192.168.50.70:59152
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:3481 Save audio Candidate cid: 1 proto: udp type: host addr: 25.12.195.106:50605
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:3481 Save audio Candidate cid: 1 proto: udp type: srflx addr: 172.103.161.49:59152
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:3481 Save audio Candidate cid: 1 proto: udp type: srflx addr: 209.52.88.106:12714
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:3523 Searching for rtp candidate.
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:3528 Choose rtp candidate, index 1, 25.12.195.106:50605
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:3301 sofia/drachtio_mrf/nobody@192.168.50.127:5040 choosing family v4
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:3539 Choose same candidate, index 0, for rtcp based on rtcp-mux attribute 25.12.195.106:50605
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:3586 setting remote audio ice addr to index 1 25.12.195.106:50605 based on candidate
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:3618 Setting remote rtcp audio addr to 25.12.195.106:50605 based on candidate
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4708 Set telephone-event payload to 110@48000
+2019-07-24 10:06:35.506239 [DEBUG] switch_core_media.c:4767 sofia/drachtio_mrf/nobody@192.168.50.127:5040 Set 2833 dtmf send payload to 110 recv payload to 110
+2019-07-24 10:06:35.515829 [DEBUG] switch_core_media.c:6878 AUDIO RTP [sofia/drachtio_mrf/nobody@192.168.50.127:5040] 192.168.50.127 port 24620 -> 25.12.195.106 port 50605 codec: 111 ms: 20
+2019-07-24 10:06:35.515829 [DEBUG] switch_rtp.c:4137 Starting timer [soft] 960 bytes per 20ms
+2019-07-24 10:06:35.515829 [INFO] switch_core_media.c:7055 Activating Audio ICE
+2019-07-24 10:06:35.515829 [NOTICE] switch_rtp.c:4636 Activating RTP audio ICE: ywfn:aIoUnCyBPVIxRglk 25.12.195.106:50605
+2019-07-24 10:06:35.515829 [DEBUG] switch_core_media.c:7096 Activating RTCP PORT 50605
+2019-07-24 10:06:35.515829 [DEBUG] switch_rtp.c:4533 RTCP send rate is: 1000 and packet rate is: 20000 Remote Port: 50605
+2019-07-24 10:06:35.515829 [INFO] switch_core_media.c:7107 Skipping RTCP ICE (Same as RTP)
+2019-07-24 10:06:35.515829 [INFO] switch_rtp.c:3603 Activate RTP/RTCP audio DTLS client
+2019-07-24 10:06:35.515829 [INFO] switch_rtp.c:3752 Changing audio DTLS state from OFF to HANDSHAKE
+2019-07-24 10:06:35.515829 [DEBUG] switch_core_media.c:7180 sofia/drachtio_mrf/nobody@192.168.50.127:5040 Set 2833 dtmf send payload to 110
+2019-07-24 10:06:35.515829 [DEBUG] switch_core_media.c:7187 sofia/drachtio_mrf/nobody@192.168.50.127:5040 Set 2833 dtmf receive payload to 110
+2019-07-24 10:06:35.515829 [DEBUG] switch_core_media.c:7210 sofia/drachtio_mrf/nobody@192.168.50.127:5040 Set rtp dtmf delay to 40
+2019-07-24 10:06:35.515829 [NOTICE] sofia_media.c:92 Pre-Answer sofia/drachtio_mrf/nobody@192.168.50.127:5040!
+2019-07-24 10:06:35.515829 [DEBUG] switch_channel.c:3474 (sofia/drachtio_mrf/nobody@192.168.50.127:5040) Callstate Change RINGING -> EARLY
+2019-07-24 10:06:35.515829 [DEBUG] switch_core_media.c:6861 Audio params are unchanged for sofia/drachtio_mrf/nobody@192.168.50.127:5040.
+2019-07-24 10:06:35.515829 [DEBUG] mod_sofia.c:850 Local SDP sofia/drachtio_mrf/nobody@192.168.50.127:5040:
+v=0
+o=FreeSWITCH 1563963375 1563963376 IN IP4 192.168.50.127
+s=FreeSWITCH
+c=IN IP4 192.168.50.127
+t=0 0
+a=msid-semantic: WMS xg9IGtsg9BOOPGeXOvAuEH1lqqy39HmO
+m=audio 24620 UDP/TLS/RTP/SAVPF 111 110
+a=rtpmap:111 opus/48000/2
+a=fmtp:111 useinbandfec=1; minptime=10
+a=rtpmap:110 telephone-event/48000
+a=ptime:20
+a=sendrecv
+a=fingerprint:sha-256 2A:89:61:BE:E1:11:8A:16:6F:42:23:59:4E:29:EF:48:3B:1F:85:4A:7B:39:3A:46:3E:BD:FF:22:71:D9:F2:38
+a=setup:active
+a=rtcp-mux
+a=rtcp:24620 IN IP4 192.168.50.127
+a=ice-ufrag:aIoUnCyBPVIxRglk
+a=ice-pwd:3c5qiwZEa85N8QuOowbisODu
+a=candidate:2774740310 1 udp 659136 192.168.50.127 24620 typ host generation 0
+a=end-of-candidates
+a=ssrc:1812263067 cname:J4OzNf2HgYrRFija
+a=ssrc:1812263067 msid:xg9IGtsg9BOOPGeXOvAuEH1lqqy39HmO a0
+a=ssrc:1812263067 mslabel:xg9IGtsg9BOOPGeXOvAuEH1lqqy39HmO
+a=ssrc:1812263067 label:xg9IGtsg9BOOPGeXOvAuEH1lqqy39HmOa0
+
+send 1615 bytes to tcp/[192.168.50.127]:53990 at 10:06:35.524010:
+   ------------------------------------------------------------------------
+   SIP/2.0 200 OK
+   Via: SIP/2.0/TCP 192.168.50.127:5040;rport=53990;branch=z9hG4bKBU3vjNZ2Ugecg
+   From: <sip:192.168.50.127:5040>;tag=c44Z45m8D1BvD
+   To: <sip:drachtio@192.168.50.127:5060>;tag=03rZZS51rt8jp
+   Call-ID: 3bebff65-28d8-1238-fa92-07091b6d5f8a
+   CSeq: 7440205 INVITE
+   Contact: <sip:drachtio@192.168.50.127:5060;transport=udp>
+   User-Agent: drachtio MRF
+   Accept: application/sdp
+   Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY
+   Supported: path, replaces
+   Allow-Events: talk, hold, conference, refer
+   Content-Type: application/sdp
+   Content-Disposition: session
+   Content-Length: 892
+   Remote-Party-ID: "drachtio" <sip:drachtio@192.168.50.127>;party=calling;privacy=off;screen=no
+   
+   v=0
+   o=FreeSWITCH 1563963375 1563963376 IN IP4 192.168.50.127
+   s=FreeSWITCH
+   c=IN IP4 192.168.50.127
+   t=0 0
+   a=msid-semantic: WMS xg9IGtsg9BOOPGeXOvAuEH1lqqy39HmO
+   m=audio 24620 UDP/TLS/RTP/SAVPF 111 110
+   a=rtpmap:111 opus/48000/2
+   a=fmtp:111 useinbandfec=1; minptime=10
+   a=rtpmap:110 telephone-event/48000
+   a=ptime:20
+   a=fingerprint:sha-256 2A:89:61:BE:E1:11:8A:16:6F:42:23:59:4E:29:EF:48:3B:1F:85:4A:7B:39:3A:46:3E:BD:FF:22:71:D9:F2:38
+   a=setup:active
+   a=rtcp-mux
+   a=rtcp:24620 IN IP4 192.168.50.127
+   a=ice-ufrag:aIoUnCyBPVIxRglk
+   a=ice-pwd:3c5qiwZEa85N8QuOowbisODu
+   a=candidate:2774740310 1 udp 659136 192.168.50.127 24620 typ host generation 0
+   a=end-of-candidates
+   a=ssrc:1812263067 cname:J4OzNf2HgYrRFija
+   a=ssrc:1812263067 msid:xg9IGtsg9BOOPGeXOvAuEH1lqqy39HmO a0
+   a=ssrc:1812263067 mslabel:xg9IGtsg9BOOPGeXOvAuEH1lqqy39HmO
+   a=ssrc:1812263067 label:xg9IGtsg9BOOPGeXOvAuEH1lqqy39HmOa0
+   ------------------------------------------------------------------------
+recv 340 bytes from tcp/[192.168.50.127]:53990 at 10:06:35.535748:
+   ------------------------------------------------------------------------
+   ACK sip:drachtio@192.168.50.127:5060;transport=udp SIP/2.0
+   Via: SIP/2.0/TCP 192.168.50.127:5040;branch=z9hG4bKc4vNmgg6rS4yB
+   Max-Forwards: 70
+   From: <sip:192.168.50.127:5040>;tag=c44Z45m8D1BvD
+   To: <sip:drachtio@192.168.50.127:5060>;tag=03rZZS51rt8jp
+   Call-ID: 3bebff65-28d8-1238-fa92-07091b6d5f8a
+   CSeq: 7440205 ACK
+   Content-Length: 0
+   
+   ------------------------------------------------------------------------
+2019-07-24 10:06:35.538623 [DEBUG] sofia.c:7084 Channel sofia/drachtio_mrf/nobody@192.168.50.127:5040 entering state [completed][200]
+2019-07-24 10:06:35.575697 [DEBUG] sofia.c:7084 Channel sofia/drachtio_mrf/nobody@192.168.50.127:5040 entering state [ready][200]
+recv 340 bytes from tcp/[192.168.50.127]:53990 at 10:06:39.543011:
+   ------------------------------------------------------------------------
+   BYE sip:drachtio@192.168.50.127:5060;transport=udp SIP/2.0
+   Via: SIP/2.0/TCP 192.168.50.127:5040;branch=z9hG4bKDDpepB19N2tHQ
+   Max-Forwards: 70
+   From: <sip:192.168.50.127:5040>;tag=c44Z45m8D1BvD
+   To: <sip:drachtio@192.168.50.127:5060>;tag=03rZZS51rt8jp
+   Call-ID: 3bebff65-28d8-1238-fa92-07091b6d5f8a
+   CSeq: 7440206 BYE
+   Content-Length: 0
+   
+   ------------------------------------------------------------------------
+2019-07-24 10:06:39.555774 [NOTICE] sofia.c:1012 Hangup sofia/drachtio_mrf/nobody@192.168.50.127:5040 [CS_EXECUTE] [NORMAL_CLEARING]
+send 433 bytes to tcp/[192.168.50.127]:53990 at 10:06:39.557638:
+   ------------------------------------------------------------------------
+   SIP/2.0 200 OK
+   Via: SIP/2.0/TCP 192.168.50.127:5040;branch=z9hG4bKDDpepB19N2tHQ;rport=53990
+   From: <sip:192.168.50.127:5040>;tag=c44Z45m8D1BvD
+   To: <sip:drachtio@192.168.50.127:5060>;tag=03rZZS51rt8jp
+   Call-ID: 3bebff65-28d8-1238-fa92-07091b6d5f8a
+   CSeq: 7440206 BYE
+   User-Agent: drachtio MRF
+   Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY
+   Supported: path, replaces
+   Content-Length: 0
+   
+   ------------------------------------------------------------------------
+2019-07-24 10:06:39.555774 [NOTICE] mod_dptools.c:1312 Channel [sofia/drachtio_mrf/nobody@192.168.50.127:5040] has been answered
+2019-07-24 10:06:39.555774 [DEBUG] switch_channel.c:3773 (sofia/drachtio_mrf/nobody@192.168.50.127:5040) Callstate Change EARLY -> ACTIVE
+2019-07-24 10:06:39.555774 [DEBUG] mod_dptools.c:1312 sofia/drachtio_mrf/nobody@192.168.50.127:5040 skip receive message [ANSWER_EVENT] (channel is hungup already)
+2019-07-24 10:06:39.555774 [DEBUG] switch_core_session.c:2815 sofia/drachtio_mrf/nobody@192.168.50.127:5040 skip receive message [APPLICATION_EXEC_COMPLETE] (channel is hungup already)
+2019-07-24 10:06:39.555774 [DEBUG] switch_core_state_machine.c:650 (sofia/drachtio_mrf/nobody@192.168.50.127:5040) State EXECUTE going to sleep
+2019-07-24 10:06:39.555774 [DEBUG] switch_core_state_machine.c:584 (sofia/drachtio_mrf/nobody@192.168.50.127:5040) Running State Change CS_HANGUP (Cur 1 Tot 3)
+2019-07-24 10:06:39.555774 [DEBUG] switch_core_state_machine.c:850 (sofia/drachtio_mrf/nobody@192.168.50.127:5040) Callstate Change ACTIVE -> HANGUP
+2019-07-24 10:06:39.555774 [DEBUG] switch_core_state_machine.c:852 (sofia/drachtio_mrf/nobody@192.168.50.127:5040) State HANGUP
+2019-07-24 10:06:39.555774 [DEBUG] mod_sofia.c:438 Channel sofia/drachtio_mrf/nobody@192.168.50.127:5040 hanging up, cause: NORMAL_CLEARING
+2019-07-24 10:06:39.555774 [DEBUG] switch_core_state_machine.c:60 sofia/drachtio_mrf/nobody@192.168.50.127:5040 Standard HANGUP, cause: NORMAL_CLEARING
+2019-07-24 10:06:39.555774 [DEBUG] switch_core_state_machine.c:852 (sofia/drachtio_mrf/nobody@192.168.50.127:5040) State HANGUP going to sleep
+2019-07-24 10:06:39.555774 [DEBUG] switch_core_state_machine.c:619 (sofia/drachtio_mrf/nobody@192.168.50.127:5040) State Change CS_HANGUP -> CS_REPORTING
+2019-07-24 10:06:39.555774 [DEBUG] switch_core_state_machine.c:584 (sofia/drachtio_mrf/nobody@192.168.50.127:5040) Running State Change CS_REPORTING (Cur 1 Tot 3)
+2019-07-24 10:06:39.555774 [DEBUG] switch_core_state_machine.c:938 (sofia/drachtio_mrf/nobody@192.168.50.127:5040) State REPORTING
+2019-07-24 10:06:39.555774 [DEBUG] switch_core_state_machine.c:174 sofia/drachtio_mrf/nobody@192.168.50.127:5040 Standard REPORTING, cause: NORMAL_CLEARING
+2019-07-24 10:06:39.555774 [DEBUG] switch_core_state_machine.c:938 (sofia/drachtio_mrf/nobody@192.168.50.127:5040) State REPORTING going to sleep
+2019-07-24 10:06:39.555774 [DEBUG] switch_core_state_machine.c:610 (sofia/drachtio_mrf/nobody@192.168.50.127:5040) State Change CS_REPORTING -> CS_DESTROY
+2019-07-24 10:06:39.555774 [DEBUG] switch_core_session.c:1665 Session 3 (sofia/drachtio_mrf/nobody@192.168.50.127:5040) Locked, Waiting on external entities
+2019-07-24 10:06:39.555774 [NOTICE] switch_core_session.c:1683 Session 3 (sofia/drachtio_mrf/nobody@192.168.50.127:5040) Ended
+2019-07-24 10:06:39.555774 [NOTICE] switch_core_session.c:1687 Close Channel sofia/drachtio_mrf/nobody@192.168.50.127:5040 [CS_DESTROY]
+2019-07-24 10:06:39.555774 [DEBUG] switch_core_state_machine.c:741 (sofia/drachtio_mrf/nobody@192.168.50.127:5040) Running State Change CS_DESTROY (Cur 0 Tot 3)
+2019-07-24 10:06:39.555774 [DEBUG] switch_core_state_machine.c:751 (sofia/drachtio_mrf/nobody@192.168.50.127:5040) State DESTROY
+2019-07-24 10:06:39.555774 [DEBUG] mod_sofia.c:343 sofia/drachtio_mrf/nobody@192.168.50.127:5040 SOFIA DESTROY
+2019-07-24 10:06:39.555774 [DEBUG] mod_opus.c:711 Opus decoder stats: Frames[0] PLC[0] FEC[0]
+2019-07-24 10:06:39.555774 [DEBUG] mod_opus.c:726 Opus encoder stats: Frames[0] Bytes encoded[0] Encoded length ms[0] Average encoded bitrate bps[0]
+2019-07-24 10:06:39.555774 [DEBUG] mod_opus.c:711 Opus decoder stats: Frames[0] PLC[0] FEC[0]
+2019-07-24 10:06:39.555774 [DEBUG] mod_opus.c:726 Opus encoder stats: Frames[0] Bytes encoded[0] Encoded length ms[0] Average encoded bitrate bps[0]
+2019-07-24 10:06:39.575689 [DEBUG] switch_nat.c:542 unmapped public port 24620 protocol UDP to localport 24620
+2019-07-24 10:06:39.585701 [DEBUG] switch_nat.c:542 unmapped public port 24621 protocol UDP to localport 24621
+2019-07-24 10:06:39.585701 [DEBUG] switch_core_state_machine.c:181 sofia/drachtio_mrf/nobody@192.168.50.127:5040 Standard DESTROY
+2019-07-24 10:06:39.585701 [DEBUG] switch_core_state_machine.c:751 (sofia/drachtio_mrf/nobody@192.168.50.127:5040) State DESTROY going to sleep
