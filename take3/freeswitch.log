@@ -1,0 +1,241 @@
+freeswitch@Andrews-MacBook-Air.local> 
+freeswitch@Andrews-MacBook-Air.local> 
+freeswitch@Andrews-MacBook-Air.local> fsctl loglevel debugrecv 415 bytes from udp/[77.247.108.152]:5076 at 09:45:07.681994:
+   ------------------------------------------------------------------------
+   OPTIONS sip:100@192.168.50.127:5060 SIP/2.0
+   Via: SIP/2.0/UDP 127.0.0.1:5076;branch=z9hG4bK-3933383637;rport
+   Content-Length: 0
+   From: "sipvicious"<sip:90501@1.1.1.1>;tag=6163363761313331313363340131353731383231363933
+   Accept: application/sdp
+   User-Agent: friendly-scanner
+   To: "sipvicious"<sip:90501@1.1.1.1>
+   Contact: sip:100@127.0.0.1:5076
+   CSeq: 1 OPTIONS
+   Call-ID: 55415613764714245430591
+   Max-Forwards: 70
+   
+   ------------------------------------------------------------------------
+send 572 bytes to udp/[77.247.108.152]:5076 at 09:45:07.682518:
+   ------------------------------------------------------------------------
+   SIP/2.0 200 OK
+   Via: SIP/2.0/UDP 127.0.0.1:5076;branch=z9hG4bK-3933383637;rport=5076;received=77.247.108.152
+   From: "sipvicious"<sip:90501@1.1.1.1>;tag=6163363761313331313363340131353731383231363933
+   To: "sipvicious" <sip:90501@1.1.1.1>;tag=vZKvrD2K4pF8Q
+   Call-ID: 55415613764714245430591
+   CSeq: 1 OPTIONS
+   Contact: <sip:192.168.50.127>
+   User-Agent: drachtio MRF
+   Accept: application/sdp
+   Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY
+   Supported: path, replaces
+   Allow-Events: talk, hold, conference, refer
+   Content-Length: 0
+   
+   ------------------------------------------------------------------------
+
+
++OK log level: DEBUG [7]
+
+freeswitch@Andrews-MacBook-Air.local> fsctl loglevel debug
+
++OK log level: DEBUG [7]
+
+freeswitch@Andrews-MacBook-Air.local> recv 422 bytes from udp/[77.247.110.238]:5100 at 09:45:22.120452:
+   ------------------------------------------------------------------------
+   OPTIONS sip:100@192.168.50.127:5060 SIP/2.0
+   Via: SIP/2.0/UDP 77.247.110.238:5100;branch=z9hG4bK-3870257531;rport
+   Content-Length: 0
+   From: "sipvicious"<sip:100@1.1.1.1>;tag=6163363761313331313363340132323739323435343635
+   Accept: application/sdp
+   User-Agent: friendly-scanner
+   To: "sipvicious"<sip:100@1.1.1.1>
+   Contact: sip:100@77.247.110.238:5100
+   CSeq: 1 OPTIONS
+   Call-ID: 446124933348042879346414
+   Max-Forwards: 70
+   
+   ------------------------------------------------------------------------
+send 550 bytes to udp/[77.247.110.238]:5100 at 09:45:22.120792:
+   ------------------------------------------------------------------------
+   SIP/2.0 200 OK
+   Via: SIP/2.0/UDP 77.247.110.238:5100;branch=z9hG4bK-3870257531;rport=5100
+   From: "sipvicious"<sip:100@1.1.1.1>;tag=6163363761313331313363340132323739323435343635
+   To: "sipvicious" <sip:100@1.1.1.1>;tag=X8cNt8jQ1Z5tK
+   Call-ID: 446124933348042879346414
+   CSeq: 1 OPTIONS
+   Contact: <sip:192.168.50.127>
+   User-Agent: drachtio MRF
+   Accept: application/sdp
+   Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY
+   Supported: path, replaces
+   Allow-Events: talk, hold, conference, refer
+   Content-Length: 0
+   
+   ------------------------------------------------------------------------
+
+freeswitch@Andrews-MacBook-Air.local> 
+freeswitch@Andrews-MacBook-Air.local> 
+freeswitch@Andrews-MacBook-Air.local> fsctl loglevel debugrecv 2313 bytes from tcp/[192.168.50.127]:53536 at 09:47:02.283459:
+   ------------------------------------------------------------------------
+   INVITE sip:drachtio@192.168.50.127:5060 SIP/2.0
+   Via: SIP/2.0/TCP 192.168.50.127:5040;rport;branch=z9hG4bKByDy85Xp4eBtc
+   Max-Forwards: 70
+   From: <sip:192.168.50.127:5040>;tag=c796aKB3Saj4c
+   To: <sip:drachtio@192.168.50.127:5060>
+   Call-ID: 80a0b758-28d5-1238-fbb2-d711310fbfe8
+   CSeq: 7439619 INVITE
+   Contact: <sip:192.168.50.127:5040>
+   User-Agent: drachtio-fsmrf:c5840ca1-34cb-45d3-a125-61268e1c823a
+   Content-Type: application/sdp
+   Content-Length: 1820
+   X-esl-outbound: 192.168.50.127:53535
+   
+   v=0
+   o=- 2000639604281888358 2 IN IP4 127.0.0.1
+   s=-
+   t=0 0
+   a=group:BUNDLE audio
+   a=msid-semantic: WMS 66BAF2DE-4A89-4C13-904E-1662C6D25760
+   m=audio 52952 UDP/TLS/RTP/SAVPF 111 103 104 9 102 0 8 106 105 13 110 112 113 126
+   c=IN IP4 172.103.161.49
+   a=rtcp:9 IN IP4 0.0.0.0
+   a=candidate:1085197679 1 udp 2122260223 192.168.50.70 52952 typ host generation 0 network-id 1 network-cost 10
+   a=candidate:4137036234 1 udp 2122194687 25.12.195.106 54095 typ host generation 0 network-id 4 network-cost 900
+   a=candidate:3253128155 1 udp 1686052607 172.103.161.49 52952 typ srflx raddr 192.168.50.70 rport 52952 generation 0 network-id 1 network-cost 10
+   a=candidate:2011049854 1 udp 1685987071 209.52.88.106 23658 typ srflx raddr 25.12.195.106 rport 54095 generation 0 network-id 4 network-cost 900
+   a=ice-ufrag:jBX9
+   a=ice-pwd:0fulII189qMKdmNU7OfxVf4s
+   a=ice-options:trickle renomination
+   a=fingerprint:sha-256 8E:1C:26:21:E9:56:91:5B:3B:3A:01:D1:34:80:1E:F9:59:FD:C9:5E:F7:37:21:04:3B:49:C3:DA:76:12:D9:B0
+   a=setup:actpass
+   a=mid:audio
+   a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+   a=sendrecv
+   a=rtcp-mux
+   a=rtpmap:111 opus/48000/2
+   a=rtcp-fb:111 transport-cc
+   a=fmtp:111 minptime=10;useinbandfec=1
+   a=rtpmap:103 ISAC/16000
+   a=rtpmap:104 ISAC/32000
+   a=rtpmap:9 G722/8000
+   a=rtpmap:102 ILBC/8000
+   a=rtpmap:0 PCMU/8000
+   a=rtpmap:8 PCMA/8000
+   a=rtpmap:106 CN/32000
+   a=rtpmap:105 CN/16000
+   a=rtpmap:13 CN/8000
+   a=rtpmap:110 telephone-event/48000
+   a=rtpmap:112 telephone-event/32000
+   a=rtpmap:113 telephone-event/16000
+   a=rtpmap:126 telephone-event/8000
+   a=ssrc:1158868674 cname:AzMOORKQEzF2r9nT
+   a=ssrc:1158868674 msid:66BAF2DE-4A89-4C13-904E-1662C6D25760 2F6AED53-8D7F-4697-BA25-7B5D772E71EE
+   a=ssrc:1158868674 mslabel:66BAF2DE-4A89-4C13-904E-1662C6D25760
+   a=ssrc:1158868674 label:2F6AED53-8D7F-4697-BA25-7B5D772E71EE
+   ------------------------------------------------------------------------
+send 305 bytes to tcp/[192.168.50.127]:53536 at 09:47:02.283869:
+   ------------------------------------------------------------------------
+   SIP/2.0 100 Trying
+   Via: SIP/2.0/TCP 192.168.50.127:5040;rport=53536;branch=z9hG4bKByDy85Xp4eBtc
+   From: <sip:192.168.50.127:5040>;tag=c796aKB3Saj4c
+   To: <sip:drachtio@192.168.50.127:5060>
+   Call-ID: 80a0b758-28d5-1238-fbb2-d711310fbfe8
+   CSeq: 7439619 INVITE
+   User-Agent: drachtio MRF
+   Content-Length: 0
+   
+   ------------------------------------------------------------------------
+2019-07-24 09:47:02.275714 [NOTICE] switch_channel.c:1104 New Channel sofia/drachtio_mrf/nobody@192.168.50.127:5040 [de6b8ab7-f303-4abc-abe0-5e118b630a75]
+2019-07-24 09:47:02.275714 [INFO] mod_dialplan_xml.c:637 Processing unknown <>->drachtio in context mrf
+2019-07-24 09:47:02.288212 [WARNING] switch_core_media.c:3451 NO candidate ACL defined, Defaulting to wan.auto
+2019-07-24 09:47:02.295760 [INFO] switch_core_media.c:7055 Activating Audio ICE
+2019-07-24 09:47:02.295760 [NOTICE] switch_rtp.c:4636 Activating RTP audio ICE: jBX9:aWr7bsmaG3BoVukA 25.12.195.106:54095
+2019-07-24 09:47:02.295760 [INFO] switch_core_media.c:7107 Skipping RTCP ICE (Same as RTP)
+2019-07-24 09:47:02.295760 [INFO] switch_rtp.c:3603 Activate RTP/RTCP audio DTLS client
+2019-07-24 09:47:02.295760 [INFO] switch_rtp.c:3752 Changing audio DTLS state from OFF to HANDSHAKE
+2019-07-24 09:47:02.295760 [NOTICE] sofia_media.c:92 Pre-Answer sofia/drachtio_mrf/nobody@192.168.50.127:5040!
+send 1615 bytes to tcp/[192.168.50.127]:53536 at 09:47:02.304673:
+   ------------------------------------------------------------------------
+   SIP/2.0 200 OK
+   Via: SIP/2.0/TCP 192.168.50.127:5040;rport=53536;branch=z9hG4bKByDy85Xp4eBtc
+   From: <sip:192.168.50.127:5040>;tag=c796aKB3Saj4c
+   To: <sip:drachtio@192.168.50.127:5060>;tag=yH6Dv33ty8UDF
+   Call-ID: 80a0b758-28d5-1238-fbb2-d711310fbfe8
+   CSeq: 7439619 INVITE
+   Contact: <sip:drachtio@192.168.50.127:5060;transport=udp>
+   User-Agent: drachtio MRF
+   Accept: application/sdp
+   Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY
+   Supported: path, replaces
+   Allow-Events: talk, hold, conference, refer
+   Content-Type: application/sdp
+   Content-Disposition: session
+   Content-Length: 892
+   Remote-Party-ID: "drachtio" <sip:drachtio@192.168.50.127>;party=calling;privacy=off;screen=no
+   
+   v=0
+   o=FreeSWITCH 1563970278 1563970279 IN IP4 192.168.50.127
+   s=FreeSWITCH
+   c=IN IP4 192.168.50.127
+   t=0 0
+   a=msid-semantic: WMS fp28RKs2rnWwQX17vulTM7ewKFShsoXG
+   m=audio 16544 UDP/TLS/RTP/SAVPF 111 110
+   a=rtpmap:111 opus/48000/2
+   a=fmtp:111 useinbandfec=1; minptime=10
+   a=rtpmap:110 telephone-event/48000
+   a=ptime:20
+   a=fingerprint:sha-256 2A:89:61:BE:E1:11:8A:16:6F:42:23:59:4E:29:EF:48:3B:1F:85:4A:7B:39:3A:46:3E:BD:FF:22:71:D9:F2:38
+   a=setup:active
+   a=rtcp-mux
+   a=rtcp:16544 IN IP4 192.168.50.127
+   a=ice-ufrag:aWr7bsmaG3BoVukA
+   a=ice-pwd:ohGUrwWk7JceV7LcdnjEleM8
+   a=candidate:1984411903 1 udp 659136 192.168.50.127 16544 typ host generation 0
+   a=end-of-candidates
+   a=ssrc:1812261894 cname:oToDEM5tGCCGUraR
+   a=ssrc:1812261894 msid:fp28RKs2rnWwQX17vulTM7ewKFShsoXG a0
+   a=ssrc:1812261894 mslabel:fp28RKs2rnWwQX17vulTM7ewKFShsoXG
+   a=ssrc:1812261894 label:fp28RKs2rnWwQX17vulTM7ewKFShsoXGa0
+   ------------------------------------------------------------------------
+recv 340 bytes from tcp/[192.168.50.127]:53536 at 09:47:02.316377:
+   ------------------------------------------------------------------------
+   ACK sip:drachtio@192.168.50.127:5060;transport=udp SIP/2.0
+   Via: SIP/2.0/TCP 192.168.50.127:5040;branch=z9hG4bKc76pa1et1Q1cr
+   Max-Forwards: 70
+   From: <sip:192.168.50.127:5040>;tag=c796aKB3Saj4c
+   To: <sip:drachtio@192.168.50.127:5060>;tag=yH6Dv33ty8UDF
+   Call-ID: 80a0b758-28d5-1238-fbb2-d711310fbfe8
+   CSeq: 7439619 ACK
+   Content-Length: 0
+   
+   ------------------------------------------------------------------------
+recv 340 bytes from tcp/[192.168.50.127]:53536 at 09:47:06.322594:
+   ------------------------------------------------------------------------
+   BYE sip:drachtio@192.168.50.127:5060;transport=udp SIP/2.0
+   Via: SIP/2.0/TCP 192.168.50.127:5040;branch=z9hG4bKDg0FcvZXy0QZK
+   Max-Forwards: 70
+   From: <sip:192.168.50.127:5040>;tag=c796aKB3Saj4c
+   To: <sip:drachtio@192.168.50.127:5060>;tag=yH6Dv33ty8UDF
+   Call-ID: 80a0b758-28d5-1238-fbb2-d711310fbfe8
+   CSeq: 7439620 BYE
+   Content-Length: 0
+   
+   ------------------------------------------------------------------------
+2019-07-24 09:47:06.335803 [NOTICE] sofia.c:1012 Hangup sofia/drachtio_mrf/nobody@192.168.50.127:5040 [CS_EXECUTE] [NORMAL_CLEARING]
+send 433 bytes to tcp/[192.168.50.127]:53536 at 09:47:06.337526:
+   ------------------------------------------------------------------------
+   SIP/2.0 200 OK
+   Via: SIP/2.0/TCP 192.168.50.127:5040;branch=z9hG4bKDg0FcvZXy0QZK;rport=53536
+   From: <sip:192.168.50.127:5040>;tag=c796aKB3Saj4c
+   To: <sip:drachtio@192.168.50.127:5060>;tag=yH6Dv33ty8UDF
+   Call-ID: 80a0b758-28d5-1238-fbb2-d711310fbfe8
+   CSeq: 7439620 BYE
+   User-Agent: drachtio MRF
+   Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY
+   Supported: path, replaces
+   Content-Length: 0
+   
+   ------------------------------------------------------------------------
+2019-07-24 09:47:06.335803 [NOTICE] mod_dptools.c:1312 Channel [sofia/drachtio_mrf/nobody@192.168.50.127:5040] has been answered
+2019-07-24 09:47:06.335803 [NOTICE] switch_core_session.c:1683 Session 2 (sofia/drachtio_mrf/nobody@192.168.50.127:5040) Ended
+2019-07-24 09:47:06.335803 [NOTICE] switch_core_session.c:1687 Close Channel sofia/drachtio_mrf/nobody@192.168.50.127:5040 [CS_DESTROY]
