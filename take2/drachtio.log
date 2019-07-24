@@ -1,0 +1,215 @@
+ 
+2019-07-24 09:28:54.515460 recv 2552 bytes from ws/[192.168.50.70]:52877 at 09:28:54.514454:
+INVITE sip:test@192.168.50.127 SIP/2.0
+Via: SIP/2.0/WS j73be7hgc7fe.invalid;branch=z9hG4bK7365567
+Max-Forwards: 70
+To: <sip:test@192.168.50.127>
+From: <sip:1234@192.168.50.127>;tag=5u9njhrljg
+Call-ID: 3ncg49j7c4p0a0pf6bqd
+CSeq: 9072 INVITE
+Contact: <sip:4psqimgt@j73be7hgc7fe.invalid;transport=ws;ob>
+Allow: ACK,CANCEL,INVITE,MESSAGE,BYE,OPTIONS,INFO,NOTIFY,REFER
+Supported: outbound
+User-Agent: SIP.js/0.11.3
+Content-Type: application/sdp
+Content-Length: 2076
+
+v=0
+o=- 9029018585730162393 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE audio
+a=msid-semantic: WMS 7561C067-6B1B-4264-BED2-05FFB5117F31
+m=audio 53204 UDP/TLS/RTP/SAVPF 111 103 104 9 102 0 8 106 105 13 110 112 113 126
+c=IN IP4 172.103.161.49
+a=rtcp:9 IN IP4 0.0.0.0
+a=candidate:1085197679 1 udp 2122260223 192.168.50.70 53204 typ host generation 0 network-id 1 network-cost 10
+a=candidate:4137036234 1 udp 2122194687 25.12.195.106 54812 typ host generation 0 network-id 4 network-cost 900
+a=candidate:3253128155 1 udp 1686052607 172.103.161.49 53204 typ srflx raddr 192.168.50.70 rport 53204 generation 0 network-id 1 network-cost 10
+a=candidate:237842847 1 tcp 1518280447 192.168.50.70 52878 typ host tcptype passive generation 0 network-id 1 network-cost 10
+a=candidate:3088438586 1 tcp 1518214911 25.12.195.106 52879 typ host tcptype passive generation 0 network-id 4 network-cost 900
+a=candidate:2011049854 1 udp 1685987071 209.52.88.106 27613 typ srflx raddr 25.12.195.106 rport 54812 generation 0 network-id 4 network-cost 900
+a=ice-ufrag:UXbg
+a=ice-pwd:YotF3Y6+0Fr1mjXFclIdcn5U
+a=ice-options:trickle renomination
+a=fingerprint:sha-256 9D:EF:B4:AC:D4:25:86:72:57:81:3F:18:1F:FB:5A:05:7D:96:8A:98:9F:61:6D:3B:AD:09:D8:FA:19:AD:69:E7
+a=setup:actpass
+a=mid:audio
+a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+a=sendrecv
+a=rtcp-mux
+a=rtpmap:111 opus/48000/2
+a=rtcp-fb:111 transport-cc
+a=fmtp:111 minptime=10;useinbandfec=1
+a=rtpmap:103 ISAC/16000
+a=rtpmap:104 ISAC/32000
+a=rtpmap:9 G722/8000
+a=rtpmap:102 ILBC/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:106 CN/32000
+a=rtpmap:105 CN/16000
+a=rtpmap:13 CN/8000
+a=rtpmap:110 telephone-event/48000
+a=rtpmap:112 telephone-event/32000
+a=rtpmap:113 telephone-event/16000
+a=rtpmap:126 telephone-event/8000
+a=ssrc:4085231916 cname:mxUem+5A+KiWqprN
+a=ssrc:4085231916 msid:7561C067-6B1B-4264-BED2-05FFB5117F31 90DF35BD-DBAE-4CD6-B497-D7D8A73187B0
+a=ssrc:4085231916 mslabel:7561C067-6B1B-4264-BED2-05FFB5117F31
+a=ssrc:4085231916 label:90DF35BD-DBAE-4CD6-B497-D7D8A73187B0 
+2019-07-24 09:28:54.516187 send 265 bytes to ws/[192.168.50.70]:52877 at 09:28:54.515905:
+SIP/2.0 100 Trying
+Via: SIP/2.0/WS j73be7hgc7fe.invalid;branch=z9hG4bK7365567;received=192.168.50.70;rport=52877
+From: <sip:1234@192.168.50.127>;tag=5u9njhrljg
+To: <sip:test@192.168.50.127>
+Call-ID: 3ncg49j7c4p0a0pf6bqd
+CSeq: 9072 INVITE
+Content-Length: 0
+ 
+2019-07-24 09:28:54.531164 tport_type_tcp.c:209 tport_tcp_init_secondary() tport_tcp_init_secondary(0x7f8e31e06530): Setting TCP_KEEPINTVL to 30
+2019-07-24 09:28:54.534669 send 2569 bytes to tcp/[192.168.50.127]:5060 at 09:28:54.532942:
+INVITE sip:drachtio@192.168.50.127:5060 SIP/2.0
+Via: SIP/2.0/TCP 192.168.50.127:5040;rport;branch=z9hG4bKe5SgrS99Najvg
+Max-Forwards: 70
+From: <sip:192.168.50.127:5040>;tag=gQU1DU1Xe5rDS
+To: <sip:drachtio@192.168.50.127:5060>
+Call-ID: f8472357-28d2-1238-9d83-4de41d005e2a
+CSeq: 7439075 INVITE
+Contact: <sip:192.168.50.127:5040>
+User-Agent: drachtio-fsmrf:a725bc17-7cbd-4fdb-a162-0878ce86e2a4
+Content-Type: application/sdp
+Content-Length: 2076
+X-esl-outbound: 192.168.50.127:53316
+
+v=0
+o=- 9029018585730162393 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE audio
+a=msid-semantic: WMS 7561C067-6B1B-4264-BED2-05FFB5117F31
+m=audio 53204 UDP/TLS/RTP/SAVPF 111 103 104 9 102 0 8 106 105 13 110 112 113 126
+c=IN IP4 172.103.161.49
+a=rtcp:9 IN IP4 0.0.0.0
+a=candidate:1085197679 1 udp 2122260223 192.168.50.70 53204 typ host generation 0 network-id 1 network-cost 10
+a=candidate:4137036234 1 udp 2122194687 25.12.195.106 54812 typ host generation 0 network-id 4 network-cost 900
+a=candidate:3253128155 1 udp 1686052607 172.103.161.49 53204 typ srflx raddr 192.168.50.70 rport 53204 generation 0 network-id 1 network-cost 10
+a=candidate:237842847 1 tcp 1518280447 192.168.50.70 52878 typ host tcptype passive generation 0 network-id 1 network-cost 10
+a=candidate:3088438586 1 tcp 1518214911 25.12.195.106 52879 typ host tcptype passive generation 0 network-id 4 network-cost 900
+a=candidate:2011049854 1 udp 1685987071 209.52.88.106 27613 typ srflx raddr 25.12.195.106 rport 54812 generation 0 network-id 4 network-cost 900
+a=ice-ufrag:UXbg
+a=ice-pwd:YotF3Y6+0Fr1mjXFclIdcn5U
+a=ice-options:trickle renomination
+a=fingerprint:sha-256 9D:EF:B4:AC:D4:25:86:72:57:81:3F:18:1F:FB:5A:05:7D:96:8A:98:9F:61:6D:3B:AD:09:D8:FA:19:AD:69:E7
+a=setup:actpass
+a=mid:audio
+a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+a=sendrecv
+a=rtcp-mux
+a=rtpmap:111 opus/48000/2
+a=rtcp-fb:111 transport-cc
+a=fmtp:111 minptime=10;useinbandfec=1
+a=rtpmap:103 ISAC/16000
+a=rtpmap:104 ISAC/32000
+a=rtpmap:9 G722/8000
+a=rtpmap:102 ILBC/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:106 CN/32000
+a=rtpmap:105 CN/16000
+a=rtpmap:13 CN/8000
+a=rtpmap:110 telephone-event/48000
+a=rtpmap:112 telephone-event/32000
+a=rtpmap:113 telephone-event/16000
+a=rtpmap:126 telephone-event/8000
+a=ssrc:4085231916 cname:mxUem+5A+KiWqprN
+a=ssrc:4085231916 msid:7561C067-6B1B-4264-BED2-05FFB5117F31 90DF35BD-DBAE-4CD6-B497-D7D8A73187B0
+a=ssrc:4085231916 mslabel:7561C067-6B1B-4264-BED2-05FFB5117F31
+a=ssrc:4085231916 label:90DF35BD-DBAE-4CD6-B497-D7D8A73187B0 
+2019-07-24 09:28:54.540598 recv 305 bytes from tcp/[192.168.50.127]:5060 at 09:28:54.540265:
+SIP/2.0 100 Trying
+Via: SIP/2.0/TCP 192.168.50.127:5040;rport=53330;branch=z9hG4bKe5SgrS99Najvg
+From: <sip:192.168.50.127:5040>;tag=gQU1DU1Xe5rDS
+To: <sip:drachtio@192.168.50.127:5060>
+Call-ID: f8472357-28d2-1238-9d83-4de41d005e2a
+CSeq: 7439075 INVITE
+User-Agent: drachtio MRF
+Content-Length: 0
+ 
+2019-07-24 09:28:54.579048 recv 1615 bytes from tcp/[192.168.50.127]:5060 at 09:28:54.578398:
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 192.168.50.127:5040;rport=53330;branch=z9hG4bKe5SgrS99Najvg
+From: <sip:192.168.50.127:5040>;tag=gQU1DU1Xe5rDS
+To: <sip:drachtio@192.168.50.127:5060>;tag=Upt3pjHg7DSNc
+Call-ID: f8472357-28d2-1238-9d83-4de41d005e2a
+CSeq: 7439075 INVITE
+Contact: <sip:drachtio@192.168.50.127:5060;transport=udp>
+User-Agent: drachtio MRF
+Accept: application/sdp
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY
+Supported: path, replaces
+Allow-Events: talk, hold, conference, refer
+Content-Type: application/sdp
+Content-Disposition: session
+Content-Length: 892
+Remote-Party-ID: "drachtio" <sip:drachtio@192.168.50.127>;party=calling;privacy=off;screen=no
+
+v=0
+o=FreeSWITCH 1563959944 1563959945 IN IP4 192.168.50.127
+s=FreeSWITCH
+c=IN IP4 192.168.50.127
+t=0 0
+a=msid-semantic: WMS tR7iDs1iYWZpvE9AcCMHhq0gO0DM2nci
+m=audio 25790 UDP/TLS/RTP/SAVPF 111 110
+a=rtpmap:111 opus/48000/2
+a=fmtp:111 useinbandfec=1; minptime=10
+a=rtpmap:110 telephone-event/48000
+a=ptime:20
+a=fingerprint:sha-256 2A:89:61:BE:E1:11:8A:16:6F:42:23:59:4E:29:EF:48:3B:1F:85:4A:7B:39:3A:46:3E:BD:FF:22:71:D9:F2:38
+a=setup:active
+a=rtcp-mux
+a=rtcp:25790 IN IP4 192.168.50.127
+a=ice-ufrag:gr4iKKo7C3jF9wzf
+a=ice-pwd:gl12rwpRrn77VWHwqzutHLqE
+a=candidate:5756578122 1 udp 659136 192.168.50.127 25790 typ host generation 0
+a=end-of-candidates
+a=ssrc:1812260806 cname:JZT4VD2JvfzCtH9d
+a=ssrc:1812260806 msid:tR7iDs1iYWZpvE9AcCMHhq0gO0DM2nci a0
+a=ssrc:1812260806 mslabel:tR7iDs1iYWZpvE9AcCMHhq0gO0DM2nci
+a=ssrc:1812260806 label:tR7iDs1iYWZpvE9AcCMHhq0gO0DM2ncia0 
+2019-07-24 09:28:54.579249 SipDialogController::processResponse - adding dialog id: f8472357-28d2-1238-9d83-4de41d005e2a;from-tag=gQU1DU1Xe5rDS
+2019-07-24 09:28:54.579381 ClientController::addDialogForTransaction - added dialog (uac), now tracking: 1 dialogs and 1 app transactions
+2019-07-24 09:28:54.587431 send 340 bytes to tcp/[192.168.50.127]:5060 at 09:28:54.587089:
+ACK sip:drachtio@192.168.50.127:5060;transport=udp SIP/2.0
+Via: SIP/2.0/TCP 192.168.50.127:5040;branch=z9hG4bKFeK9SmtDKK8ec
+Max-Forwards: 70
+From: <sip:192.168.50.127:5040>;tag=gQU1DU1Xe5rDS
+To: <sip:drachtio@192.168.50.127:5060>;tag=Upt3pjHg7DSNc
+Call-ID: f8472357-28d2-1238-9d83-4de41d005e2a
+CSeq: 7439075 ACK
+Content-Length: 0
+ 
+2019-07-24 09:28:58.595080 send 340 bytes to tcp/[192.168.50.127]:5060 at 09:28:58.594704:
+BYE sip:drachtio@192.168.50.127:5060;transport=udp SIP/2.0
+Via: SIP/2.0/TCP 192.168.50.127:5040;branch=z9hG4bKgQc2UFBHgvy1Q
+Max-Forwards: 70
+From: <sip:192.168.50.127:5040>;tag=gQU1DU1Xe5rDS
+To: <sip:drachtio@192.168.50.127:5060>;tag=Upt3pjHg7DSNc
+Call-ID: f8472357-28d2-1238-9d83-4de41d005e2a
+CSeq: 7439076 BYE
+Content-Length: 0
+ 
+2019-07-24 09:28:58.599447 recv 433 bytes from tcp/[192.168.50.127]:5060 at 09:28:58.599043:
+SIP/2.0 200 OK
+Via: SIP/2.0/TCP 192.168.50.127:5040;branch=z9hG4bKgQc2UFBHgvy1Q;rport=53330
+From: <sip:192.168.50.127:5040>;tag=gQU1DU1Xe5rDS
+To: <sip:drachtio@192.168.50.127:5060>;tag=Upt3pjHg7DSNc
+Call-ID: f8472357-28d2-1238-9d83-4de41d005e2a
+CSeq: 7439076 BYE
+User-Agent: drachtio MRF
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY
+Supported: path, replaces
+Content-Length: 0
+ 
+2019-07-24 09:28:58.599707 ClientController::removeDialog - after removing dialogs count is now: 0
+2019-07-24 09:28:58.599936 ClientController::removeDialog - dialog not found: f8472357-28d2-1238-9d83-4de41d005e2a;from-tag=gQU1DU1Xe5rDS
