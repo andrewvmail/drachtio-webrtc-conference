@@ -1,0 +1,494 @@
+2019-07-24 12:55:52.880013 Client::read_handler - bouncing client due to error reading: asio.misc:2
+2019-07-24 12:55:52.880144 ClientController::leave - Removed client, count of connected clients is now: 0
+2019-07-24 12:55:52.880249 BaseClient::~BaseClient
+2019-07-24 12:55:53.908810 ClientController::accept_handler_tcp - got connection
+2019-07-24 12:55:53.908890 Client::start - Received connection from client at 127.0.0.1:57563
+2019-07-24 12:55:53.908937 ClientController::join - Added client, count of connected clients is now: 1
+2019-07-24 12:55:53.908987 ClientController::start_accept_tcp
+2019-07-24 12:55:53.911354 Client::read_handler read: c6d07ed8-ff65-49ef-b9a6-a8dcfd8b8854|authenticate|cymru|
+
+2019-07-24 12:55:53.911456 Client::processAuthentication - added tags 
+2019-07-24 12:55:53.911498 Client::processAuthentication - validating secret cymru
+2019-07-24 12:55:53.911623 Client::processAuthentication - secret validated successfully: cymru
+2019-07-24 12:55:53.911668 Sending response: 235#7d9fe6d7-538f-498d-92b6-ebef946e089e|response|c6d07ed8-ff65-49ef-b9a6-a8dcfd8b8854|OK|wss/127.0.0.1:443,wss/192.168.99.1:443,ws/175.25.50.122:80,wss/175.25.50.121:443,wss/175.25.50.122:443,udp/175.25.50.122:5040|v0.8.3-rc1-1-gc77950e55
+
+2019-07-24 12:55:53.911736 Client::write_handler - wrote 239 bytes: system:0
+2019-07-24 12:55:53.913418 Client::read_handler read: 5ff00da5-e39b-4f66-9988-95dc58e296c7|route|invite
+
+2019-07-24 12:55:53.913511 Added client for invite requests
+2019-07-24 12:55:53.913707 Sending response: 85#91f3d6bc-6cc0-4c20-a661-0b5436ec6ea6|response|5ff00da5-e39b-4f66-9988-95dc58e296c7|OK
+
+2019-07-24 12:55:53.913803 Client::write_handler - wrote 88 bytes: system:0
+
+
+
+
+2019-07-24 12:55:55.621381 DrachtioController::processWatchdogTimer
+2019-07-24 12:55:55.621482 size of hash table for server-side transactions                  31
+2019-07-24 12:55:55.621528 size of hash table for client-side transactions                  31
+2019-07-24 12:55:55.621565 size of hash table for dialogs                                   31
+2019-07-24 12:55:55.621600 number of server-side transactions in the hash table             0
+2019-07-24 12:55:55.621634 number of client-side transactions in the hash table             3
+2019-07-24 12:55:55.621669 number of dialogs in the hash table                              2
+2019-07-24 12:55:55.621705 number of sip messages received                                  11
+2019-07-24 12:55:55.621740 number of sip messages sent                                      10
+2019-07-24 12:55:55.621775 number of sip requests received                                  6
+2019-07-24 12:55:55.621826 number of sip requests sent                                      4
+2019-07-24 12:55:55.621869 number of bad sip messages received                              1
+2019-07-24 12:55:55.621906 number of bad sip requests received                              0
+2019-07-24 12:55:55.621941 number of bad sip requests dropped                               0
+2019-07-24 12:55:55.621976 number of bad sip reponses dropped                               0
+2019-07-24 12:55:55.622011 number of client transactions created                            4
+2019-07-24 12:55:55.622046 number of server transactions created                            0
+2019-07-24 12:55:55.622080 number of in-dialog server transactions created                  0
+2019-07-24 12:55:55.622115 number of server transactions that have received ack             0
+2019-07-24 12:55:55.622149 number of server transactions that have received cancel          0
+2019-07-24 12:55:55.622183 number of requests that were processed stateless                 6
+2019-07-24 12:55:55.622217 number of requests converted to transactions by message callback 0
+2019-07-24 12:55:55.622251 number of responses without matching request                     0
+2019-07-24 12:55:55.622285 number of successful responses missing INVITE client transaction 0
+2019-07-24 12:55:55.622319 number of requests merged by UAS                                 0
+2019-07-24 12:55:55.622354 number of SIP responses sent by stack                            6
+2019-07-24 12:55:55.622389 number of SIP requests retransmitted by stack                    0
+2019-07-24 12:55:55.622424 number of SIP responses retransmitted by stack                   0
+2019-07-24 12:55:55.622458 number of retransmitted SIP requests received by stack           0
+2019-07-24 12:55:55.622493 number of SIP client transactions that has timeout               0
+2019-07-24 12:55:55.622527 number of SIP server transactions that has timeout               0
+2019-07-24 12:55:55.622564 SipDialogController storage counts
+2019-07-24 12:55:55.622598 ----------------------------------
+2019-07-24 12:55:55.622632 m_mapIrq2IIP size:                                               0
+2019-07-24 12:55:55.622668 m_mapOrq2IIP size:                                               0
+2019-07-24 12:55:55.622704 m_mapTransactionId2IIP size:                                     0
+2019-07-24 12:55:55.622739 m_mapLeg2Dialog size:                                            2
+2019-07-24 12:55:55.622774 m_mapId2Dialog size:                                             2
+2019-07-24 12:55:55.622867 m_mapOrq2RIP size:                                               0
+2019-07-24 12:55:55.622915 number of outgoing transactions held for timerD:                 1
+2019-07-24 12:55:55.622954 number of outgoing transactions waiting for ACK from app:        0
+2019-07-24 12:55:55.622991 general queue size:                                              0
+2019-07-24 12:55:55.623044 timer A queue size:                                              0
+2019-07-24 12:55:55.623128 timer B queue size:                                              0
+2019-07-24 12:55:55.623175 timer C queue size:                                              0
+2019-07-24 12:55:55.623215 timer D queue size:                                              1
+2019-07-24 12:55:55.623250 timer E queue size:                                              0
+2019-07-24 12:55:55.623343 timer F queue size:                                              0
+2019-07-24 12:55:55.623387 timer G queue size:                                              0
+2019-07-24 12:55:55.623520 timer K queue size:                                              0
+2019-07-24 12:55:55.623562 ClientController storage counts
+2019-07-24 12:55:55.623593 ----------------------------------
+2019-07-24 12:55:55.623622 m_clients size:                                                  1
+2019-07-24 12:55:55.623653 m_services size:                                                 0
+2019-07-24 12:55:55.623683 m_request_types size:                                            3
+2019-07-24 12:55:55.623713 m_map_of_request_type_offsets size:                              1
+2019-07-24 12:55:55.623743 m_mapDialogs size:                                               2
+2019-07-24 12:55:55.623772 m_mapNetTransactions size:                                       2
+2019-07-24 12:55:55.623802 m_mapAppTransactions size:                                       0
+2019-07-24 12:55:55.623832 m_mapApiRequests size:                                           0
+2019-07-24 12:55:55.623861 m_mapDialogId2Appname size:                                      0
+2019-07-24 12:55:55.623906 PendingRequestController storage counts
+2019-07-24 12:55:55.623942 ----------------------------------
+2019-07-24 12:55:55.623975 m_mapCallId2Invite size:                                         2
+2019-07-24 12:55:55.624010 m_mapTxnId2Invite size:                                          2
+2019-07-24 12:55:55.624046 SipProxyController storage counts
+2019-07-24 12:55:55.624080 ----------------------------------
+2019-07-24 12:55:55.624113 m_mapCallId2Proxy size:                                          0
+2019-07-24 12:55:55.624149 m_mapNonce2Challenge size:                                       0
+2019-07-24 12:55:55.624184 general queue size:                                              0
+2019-07-24 12:55:55.624219 timer A queue size:                                              0
+2019-07-24 12:55:55.624255 timer B queue size:                                              0
+2019-07-24 12:55:55.624304 timer C queue size:                                              0
+2019-07-24 12:55:55.624353 timer D queue size:                                              0
+2019-07-24 12:55:55.624399 timer E queue size:                                              0
+2019-07-24 12:55:55.624437 timer F queue size:                                              0
+2019-07-24 12:55:55.624472 timer G queue size:                                              0
+2019-07-24 12:55:55.624506 timer K queue size:                                              0
+2019-07-24 12:55:55.624542 m_mapUri2InvalidData size:                                       0
+
+
+2019-07-24 12:55:57.324634 tport.c:2777 tport_wakeup_pri() tport_wakeup_pri(0x7f9a14c07020): events IN
+2019-07-24 12:55:57.324754 tport.c:880 tport_alloc_secondary() tport_alloc_secondary(0x7f9a14c07020): new secondary tport 0x103cd1000
+2019-07-24 12:55:57.336350 tport.c:2668 tport_accept() tport_accept(0x103cd1000): new connection from ws/175.25.50.130:64126
+2019-07-24 12:55:57.343932 tport.c:2801 tport_wakeup() tport_wakeup(0x103cd1000): events IN
+2019-07-24 12:55:57.344062 tport.c:2892 tport_recv_event() tport_recv_event(0x103cd1000)
+2019-07-24 12:55:57.344211 tport.c:3233 tport_recv_iovec() tport_recv_iovec(0x103cd1000) msg 0x7f9a16024b90 from (ws/175.25.50.130:64126) has 534 bytes, veclen = 1
+2019-07-24 12:55:57.344481 recv 534 bytes from ws/[175.25.50.130]:64126 at 12:55:57.344270:
+REGISTER sip:175.25.50.122 SIP/2.0
+Via: SIP/2.0/WS mbc75fhrodi8.invalid;branch=z9hG4bK3145110
+Max-Forwards: 70
+To: <sip:1234@175.25.50.122>
+From: <sip:1234@175.25.50.122>;tag=5lic30i5js
+Call-ID: pfdja35nsopm7e7fb68pa4
+CSeq: 3657 REGISTER
+Contact: <sip:klpho75u@mbc75fhrodi8.invalid;transport=ws>;reg-id=1;+sip.instance="<urn:uuid:484afdc9-93b7-40a1-8daf-9d546d47dfe5>";expires=600
+Allow: ACK,CANCEL,INVITE,MESSAGE,BYE,OPTIONS,INFO,NOTIFY,REFER
+Supported: path, gruu, outbound
+User-Agent: SIP.js/0.11.3
+Content-Length: 0
+ 
+2019-07-24 12:55:57.344549 tport.c:3051 tport_deliver() tport_deliver(0x103cd1000): msg 0x7f9a16024b90 (534 bytes) from ws/175.25.50.130:64126 next=0x0
+2019-07-24 12:55:57.344594 nta.c:3028 agent_recv_request() nta: received REGISTER sip:175.25.50.122 SIP/2.0 (CSeq 3657)
+2019-07-24 12:55:57.344636 nta.c:3323 agent_check_request_via() nta: Via check: received=175.25.50.130
+2019-07-24 12:55:57.344680 nta.c:3397 agent_aliases() nta: canonizing sip:175.25.50.122 with contact
+2019-07-24 12:55:57.344719 nta.c:3243 agent_recv_request() nta: REGISTER (3657) to message callback
+2019-07-24 12:55:57.344755 processMessageStatelessly - incoming message with call-id pfdja35nsopm7e7fb68pa4 does not match an existing call leg, processed in thread 0x10784c5c0
+2019-07-24 12:55:57.344817 No connected clients found to handle incoming register request
+2019-07-24 12:55:57.344858 processNewRequest - No providers available for REGISTER
+2019-07-24 12:55:57.344974 tport.c:3285 tport_tsend() tport_tsend(0x103cd1000) tpn = WS/175.25.50.130:5060
+2019-07-24 12:55:57.345038 tport_type_ws.c:311 tport_send_stream_ws() tport_ws_writevec: vec 0x103cd11f0 0x7f9a1780c800 298 (298)
+2019-07-24 12:55:57.345109 tport.c:3531 tport_send_msg() tport_vsend returned 298
+2019-07-24 12:55:57.345238 send 298 bytes to ws/[175.25.50.130]:64126 at 12:55:57.345032:
+SIP/2.0 503 Service Unavailable
+Via: SIP/2.0/WS mbc75fhrodi8.invalid;branch=z9hG4bK3145110;received=175.25.50.130;rport=64126
+From: <sip:1234@175.25.50.122>;tag=5lic30i5js
+To: <sip:1234@175.25.50.122>;tag=S5DKDmD2m03pm
+Call-ID: pfdja35nsopm7e7fb68pa4
+CSeq: 3657 REGISTER
+Content-Length: 0
+ 
+2019-07-24 12:55:57.345286 tport.c:2324 tport_set_secondary_timer() tport(0x103cd1000): reset timer
+2019-07-24 12:55:57.345332 tport.c:2324 tport_set_secondary_timer() tport(0x103cd1000): reset timer
+
+
+
+
+2019-07-24 12:56:01.227629 tport.c:2801 tport_wakeup() tport_wakeup(0x103cd1000): events IN
+2019-07-24 12:56:01.227718 tport.c:2892 tport_recv_event() tport_recv_event(0x103cd1000)
+2019-07-24 12:56:01.239668 tport.c:3233 tport_recv_iovec() tport_recv_iovec(0x103cd1000) msg 0x7f9a14d0a430 from (ws/175.25.50.130:64126) has 2544 bytes, veclen = 1
+2019-07-24 12:56:01.240347 recv 2544 bytes from ws/[175.25.50.130]:64126 at 12:56:01.239748:
+INVITE sip:Momo@175.25.50.122 SIP/2.0
+Via: SIP/2.0/WS mbc75fhrodi8.invalid;branch=z9hG4bK5409692
+Max-Forwards: 70
+To: <sip:Momo@175.25.50.122>
+From: <sip:1234@175.25.50.122>;tag=h5m2lues7j
+Call-ID: cgst24m257n1t2e2pcc4
+CSeq: 6896 INVITE
+Contact: <sip:klpho75u@mbc75fhrodi8.invalid;transport=ws;ob>
+Allow: ACK,CANCEL,INVITE,MESSAGE,BYE,OPTIONS,INFO,NOTIFY,REFER
+Supported: outbound
+User-Agent: SIP.js/0.11.3
+Content-Type: application/sdp
+Content-Length: 2071
+
+v=0
+o=- 6318798630035092511 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE audio
+a=msid-semantic: WMS E90C446C-E078-4384-AAFE-25E5DFC2806E
+m=audio 59703 UDP/TLS/RTP/SAVPF 111 103 104 9 102 0 8 106 105 13 110 112 113 126
+c=IN IP4 206.116.9.145
+a=rtcp:9 IN IP4 0.0.0.0
+a=candidate:1514674513 1 udp 2122260223 175.25.50.130 59703 typ host generation 0 network-id 1 network-cost 10
+a=candidate:3107948316 1 udp 2122194687 25.168.69.23 58449 typ host generation 0 network-id 4 network-cost 900
+a=candidate:3674218469 1 udp 1686052607 206.116.9.145 59703 typ srflx raddr 175.25.50.130 rport 59703 generation 0 network-id 1 network-cost 10
+a=candidate:1328545480 1 udp 1685987071 72.143.227.63 46877 typ srflx raddr 25.168.69.23 rport 58449 generation 0 network-id 4 network-cost 900
+a=candidate:348906913 1 tcp 1518280447 175.25.50.130 64127 typ host tcptype passive generation 0 network-id 1 network-cost 10
+a=candidate:4156324844 1 tcp 1518214911 25.168.69.23 64128 typ host tcptype passive generation 0 network-id 4 network-cost 900
+a=ice-ufrag:gb+F
+a=ice-pwd:94l+uV6SfVeCpX/tR6DYV1Go
+a=ice-options:trickle renomination
+a=fingerprint:sha-256 4C:BC:30:FA:74:BD:1A:15:FA:C4:D7:74:50:AE:20:33:BA:93:F5:5C:A2:86:CF:DB:8D:53:05:88:70:4A:70:E5
+a=setup:actpass
+a=mid:audio
+a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+a=sendrecv
+a=rtcp-mux
+a=rtpmap:111 opus/48000/2
+a=rtcp-fb:111 transport-cc
+a=fmtp:111 minptime=10;useinbandfec=1
+a=rtpmap:103 ISAC/16000
+a=rtpmap:104 ISAC/32000
+a=rtpmap:9 G722/8000
+a=rtpmap:102 ILBC/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:106 CN/32000
+a=rtpmap:105 CN/16000
+a=rtpmap:13 CN/8000
+a=rtpmap:110 telephone-event/48000
+a=rtpmap:112 telephone-event/32000
+a=rtpmap:113 telephone-event/16000
+a=rtpmap:126 telephone-event/8000
+a=ssrc:1900159584 cname:YLDarZ7dE9TUgLLR
+a=ssrc:1900159584 msid:E90C446C-E078-4384-AAFE-25E5DFC2806E 63167719-566E-4F8B-AA8B-4B8B73B41669
+a=ssrc:1900159584 mslabel:E90C446C-E078-4384-AAFE-25E5DFC2806E
+a=ssrc:1900159584 label:63167719-566E-4F8B-AA8B-4B8B73B41669 
+2019-07-24 12:56:01.240597 tport.c:3051 tport_deliver() tport_deliver(0x103cd1000): msg 0x7f9a14d0a430 (2544 bytes) from ws/175.25.50.130:64126 next=0x0
+2019-07-24 12:56:01.240652 nta.c:3028 agent_recv_request() nta: received INVITE sip:Momo@175.25.50.122 SIP/2.0 (CSeq 6896)
+2019-07-24 12:56:01.240697 nta.c:3323 agent_check_request_via() nta: Via check: received=175.25.50.130
+2019-07-24 12:56:01.240806 nta.c:3397 agent_aliases() nta: canonizing sip:Momo@175.25.50.122 with contact
+2019-07-24 12:56:01.240873 nta.c:3243 agent_recv_request() nta: INVITE (6896) to message callback
+2019-07-24 12:56:01.240946 processMessageStatelessly - incoming message with call-id cgst24m257n1t2e2pcc4 does not match an existing call leg, processed in thread 0x10784c5c0
+2019-07-24 12:56:01.241027 tport.c:3285 tport_tsend() tport_tsend(0x103cd1000) tpn = WS/175.25.50.130:5060
+2019-07-24 12:56:01.241088 tport_type_ws.c:311 tport_send_stream_ws() tport_ws_writevec: vec 0x103cd11f0 0x7f9a17809400 263 (263)
+2019-07-24 12:56:01.241164 tport.c:3531 tport_send_msg() tport_vsend returned 263
+2019-07-24 12:56:01.241298 send 263 bytes to ws/[175.25.50.130]:64126 at 12:56:01.241083:
+SIP/2.0 100 Trying
+Via: SIP/2.0/WS mbc75fhrodi8.invalid;branch=z9hG4bK5409692;received=175.25.50.130;rport=64126
+From: <sip:1234@175.25.50.122>;tag=h5m2lues7j
+To: <sip:Momo@175.25.50.122>
+Call-ID: cgst24m257n1t2e2pcc4
+CSeq: 6896 INVITE
+Content-Length: 0
+ 
+2019-07-24 12:56:01.241347 tport.c:2324 tport_set_secondary_timer() tport(0x103cd1000): reset timer
+2019-07-24 12:56:01.241402 ClientController::selectClientForRequestOutsideDialog - there are 3 possible clients, we are starting with offset 2
+2019-07-24 12:56:01.241450 ClientController::route_request_outside_dialog - Selected client at offset 2
+2019-07-24 12:56:01.241550 PendingRequestController::add - tport: 0x103cd1000, Call-ID: cgst24m257n1t2e2pcc4, transactionId 588e2520-4ec9-4b8d-b0cf-656c4781d408
+2019-07-24 12:56:01.241601 pending-request: Adding entry to go off in 64000ms
+2019-07-24 12:56:01.241640 pending-request: Adding entry to the tail of the queue: length 3
+2019-07-24 12:56:01.241703 ClientController::addNetTransaction: transactionId 588e2520-4ec9-4b8d-b0cf-656c4781d408; size: 3
+2019-07-24 12:56:01.241767 tport.c:2324 tport_set_secondary_timer() tport(0x103cd1000): reset timer
+2019-07-24 12:56:01.241972 Client::write_handler - wrote 2717 bytes: system:0
+2019-07-24 12:56:01.249631 Client::read_handler read: 70052a81-5cc8-467a-88fb-b9a51f6d3783|sip||
+INVITE sip:drachtio@175.25.50.122:5060 SIP/2.0
+User-Agent: drachtio-fsmrf:36eec8f3-0ef2-43cd-a229-35a6d4c22894
+X-esl-outbound: 175.25.50.122:57562
+Content-Length: 2071
+
+v=0
+o=- 6318798630035092511 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE audio
+a=msid-semantic: WMS E90C446C-E078-4384-AAFE-25E5DFC2806E
+m=audio 59703 UDP/TLS/RTP/SAVPF 111 103 104 9 102 0 8 106 105 13 110 112 113 126
+c=IN IP4 206.116.9.145
+a=rtcp:9 IN IP4 0.0.0.0
+a=candidate:1514674513 1 udp 2122260223 175.25.50.130 59703 typ host generation 0 network-id 1 network-cost 10
+a=candidate:3107948316 1 udp 2122194687 25.168.69.23 58449 typ host generation 0 network-id 4 network-cost 900
+a=candidate:3674218469 1 udp 1686052607 206.116.9.145 59703 typ srflx raddr 175.25.50.130 rport 59703 generation 0 network-id 1 network-cost 10
+a=candidate:1328545480 1 udp 1685987071 72.143.227.63 46877 typ srflx raddr 25.168.69.23 rport 58449 generation 0 network-id 4 network-cost 900
+a=candidate:348906913 1 tcp 1518280447 175.25.50.130 64127 typ host tcptype passive generation 0 network-id 1 network-cost 10
+a=candidate:4156324844 1 tcp 1518214911 25.168.69.23 64128 typ host tcptype passive generation 0 network-id 4 network-cost 900
+a=ice-ufrag:gb+F
+a=ice-pwd:94l+uV6SfVeCpX/tR6DYV1Go
+a=ice-options:trickle renomination
+a=fingerprint:sha-256 4C:BC:30:FA:74:BD:1A:15:FA:C4:D7:74:50:AE:20:33:BA:93:F5:5C:A2:86:CF:DB:8D:53:05:88:70:4A:70:E5
+a=setup:actpass
+a=mid:audio
+a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+a=sendrecv
+a=rtcp-mux
+a=rtpmap:111 opus/48000/2
+a=rtcp-fb:111 transport-cc
+a=fmtp:111 minptime=10;useinbandfec=1
+a=rtpmap:103 ISAC/16000
+a=rtpmap:104 ISAC/32000
+a=rtpmap:9 G722/8000
+a=rtpmap:102 ILBC/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:106 CN/32000
+a=rtpmap:105 CN/16000
+a=rtpmap:13 CN/8000
+a=rtpmap:110 telephone-event/48000
+a=rtpmap:112 telephone-event/32000
+a=rtpmap:113 telephone-event/16000
+a=rtpmap:126 telephone-event/8000
+a=ssrc:1900159584 cname:YLDarZ7dE9TUgLLR
+a=ssrc:1900159584 msid:E90C446C-E078-4384-AAFE-25E5DFC2806E 63167719-566E-4F8B-AA8B-4B8B73B41669
+a=ssrc:1900159584 mslabel:E90C446C-E078-4384-AAFE-25E5DFC2806E
+a=ssrc:1900159584 label:63167719-566E-4F8B-AA8B-4B8B73B41669
+
+
+2019-07-24 12:56:01.249943 Client::processMessage - got request with 4 tokens
+2019-07-24 12:56:01.250052 Client::processMessage - request id 70052a81-5cc8-467a-88fb-b9a51f6d3783, request type: sip transaction id: , dialog id: 
+2019-07-24 12:56:01.250116 Client::processMessage - sending a request outside of a dialog
+2019-07-24 12:56:01.250236 ClientController::addAppTransaction: transactionId b38572a4-e601-41d0-99a6-63700a057965; size: 1
+2019-07-24 12:56:01.250286 ClientController::addApiRequest: clientMsgId 70052a81-5cc8-467a-88fb-b9a51f6d3783; size: 1
+2019-07-24 12:56:01.250424 DrachtioController::findTportForSubscription: no transport found for drachtio@175.25.50.122
+2019-07-24 12:56:01.250671 SipTransport::findAppropriateTransport: searching for a transport to reach udp/sip:drachtio@175.25.50.122:5060
+2019-07-24 12:56:01.250734 SipTransport::findAppropriateTransport - after filtering for transport we have 6 candidates
+2019-07-24 12:56:01.250779 SipTransport::findAppropriateTransport - after filtering for protocol we have 1 candidates
+2019-07-24 12:56:01.250819 SipTransport::findAppropriateTransport: - returning the best match 0x7f9a16103a10: udp/175.25.50.122:5040
+2019-07-24 12:56:01.250859 SipTransport::getContactUri - created Contact header: sip:175.25.50.122:5040
+2019-07-24 12:56:01.250897 SipDialogController::doSendRequestOutsideDialog selected transport 0x7f9a16103a10udp/175.25.50.122:5040
+2019-07-24 12:56:01.251091 makeTags - Adding well-known header 'User-Agent' with value 'drachtio-fsmrf:36eec8f3-0ef2-43cd-a229-35a6d4c22894'
+2019-07-24 12:56:01.251168 makeTags - custom header: 'X-esl-outbound', value: 175.25.50.122:57562
+2019-07-24 12:56:01.251221 SipDialogController::doSendRequestOutsideDialog - from: <sip:175.25.50.122:5040>
+2019-07-24 12:56:01.251259 SipDialogController::doSendRequestOutsideDialog - to: sip:drachtio@175.25.50.122:5060
+2019-07-24 12:56:01.251295 SipDialogController::doSendRequestOutsideDialog - contact: <sip:175.25.50.122:5040>
+2019-07-24 12:56:01.251331 SipDialogController::doSendRequestOutsideDialog - automatically detecting content-type as application/sdp
+2019-07-24 12:56:01.251369 isLocalSipUri: checking to see if this is one of mine: sip:drachtio@175.25.50.122:5060
+2019-07-24 12:56:01.251427 nta.c:4566 nta_leg_tcreate() nta_leg_tcreate(0x7f9a16104f80)
+2019-07-24 12:56:01.251497 nta.c:2813 nta_tpn_by_url() nta: selecting scheme sip
+2019-07-24 12:56:01.251558 tport.c:3285 tport_tsend() tport_tsend(0x7f9a16103a10) tpn = */175.25.50.122:5060
+2019-07-24 12:56:01.251617 tport.c:4085 tport_resolve() tport_resolve addrinfo = 175.25.50.122:5060
+2019-07-24 12:56:01.251672 tport.c:3285 tport_tsend() tport_tsend(0x7f9a16103a10) tpn = */175.25.50.122:5060
+2019-07-24 12:56:01.251721 tport.c:4085 tport_resolve() tport_resolve addrinfo = 175.25.50.122:5060
+2019-07-24 12:56:01.251791 tport.c:3531 tport_send_msg() tport_vsend returned 2558
+2019-07-24 12:56:01.252451 send 2558 bytes to udp/[175.25.50.122]:5060 at 12:56:01.251758:
+INVITE sip:drachtio@175.25.50.122:5060 SIP/2.0
+Via: SIP/2.0/UDP 175.25.50.122:5040;rport;branch=z9hG4bKQBXDK167S4Zyc
+Max-Forwards: 70
+From: <sip:175.25.50.122:5040>;tag=te7BFFy5H9S9F
+To: <sip:drachtio@175.25.50.122:5060>
+Call-ID: e72e3b84-28ef-1238-92ac-571cd9067103
+CSeq: 7445288 INVITE
+Contact: <sip:175.25.50.122:5040>
+User-Agent: drachtio-fsmrf:36eec8f3-0ef2-43cd-a229-35a6d4c22894
+Content-Type: application/sdp
+Content-Length: 2071
+X-esl-outbound: 175.25.50.122:57562
+
+v=0
+o=- 6318798630035092511 2 IN IP4 127.0.0.1
+s=-
+t=0 0
+a=group:BUNDLE audio
+a=msid-semantic: WMS E90C446C-E078-4384-AAFE-25E5DFC2806E
+m=audio 59703 UDP/TLS/RTP/SAVPF 111 103 104 9 102 0 8 106 105 13 110 112 113 126
+c=IN IP4 206.116.9.145
+a=rtcp:9 IN IP4 0.0.0.0
+a=candidate:1514674513 1 udp 2122260223 175.25.50.130 59703 typ host generation 0 network-id 1 network-cost 10
+a=candidate:3107948316 1 udp 2122194687 25.168.69.23 58449 typ host generation 0 network-id 4 network-cost 900
+a=candidate:3674218469 1 udp 1686052607 206.116.9.145 59703 typ srflx raddr 175.25.50.130 rport 59703 generation 0 network-id 1 network-cost 10
+a=candidate:1328545480 1 udp 1685987071 72.143.227.63 46877 typ srflx raddr 25.168.69.23 rport 58449 generation 0 network-id 4 network-cost 900
+a=candidate:348906913 1 tcp 1518280447 175.25.50.130 64127 typ host tcptype passive generation 0 network-id 1 network-cost 10
+a=candidate:4156324844 1 tcp 1518214911 25.168.69.23 64128 typ host tcptype passive generation 0 network-id 4 network-cost 900
+a=ice-ufrag:gb+F
+a=ice-pwd:94l+uV6SfVeCpX/tR6DYV1Go
+a=ice-options:trickle renomination
+a=fingerprint:sha-256 4C:BC:30:FA:74:BD:1A:15:FA:C4:D7:74:50:AE:20:33:BA:93:F5:5C:A2:86:CF:DB:8D:53:05:88:70:4A:70:E5
+a=setup:actpass
+a=mid:audio
+a=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level
+a=sendrecv
+a=rtcp-mux
+a=rtpmap:111 opus/48000/2
+a=rtcp-fb:111 transport-cc
+a=fmtp:111 minptime=10;useinbandfec=1
+a=rtpmap:103 ISAC/16000
+a=rtpmap:104 ISAC/32000
+a=rtpmap:9 G722/8000
+a=rtpmap:102 ILBC/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:106 CN/32000
+a=rtpmap:105 CN/16000
+a=rtpmap:13 CN/8000
+a=rtpmap:110 telephone-event/48000
+a=rtpmap:112 telephone-event/32000
+a=rtpmap:113 telephone-event/16000
+a=rtpmap:126 telephone-event/8000
+a=ssrc:1900159584 cname:YLDarZ7dE9TUgLLR
+a=ssrc:1900159584 msid:E90C446C-E078-4384-AAFE-25E5DFC2806E 63167719-566E-4F8B-AA8B-4B8B73B41669
+a=ssrc:1900159584 mslabel:E90C446C-E078-4384-AAFE-25E5DFC2806E
+a=ssrc:1900159584 label:63167719-566E-4F8B-AA8B-4B8B73B41669 
+2019-07-24 12:56:01.252782 nta.c:8470 outgoing_send() nta: sent INVITE (7445288) to */175.25.50.122:5060
+2019-07-24 12:56:01.252887 tport.c:4199 tport_pend() tport_pend(0x7f9a16103a10): pending 0x7f9a161067b0 for udp/175.25.50.122:5040 (already 0)
+2019-07-24 12:56:01.252949 nta.c:1409 set_timeout() nta: timer shortened to 1000 ms
+2019-07-24 12:56:01.253009 SipDialog::SipDialog - creating dialog for outbound INVITE sent from udp/175.25.50.122:5040 to 175.25.50.122:5060
+2019-07-24 12:56:01.253055 SipDialogController::addOutgoingInviteTransaction:  adding leg 0x7f9a16104f80
+2019-07-24 12:56:01.253131 ClientController::removeApiRequest: clientMsgId 70052a81-5cc8-467a-88fb-b9a51f6d3783; size: 0
+2019-07-24 12:56:01.253221 tport.c:2777 tport_wakeup_pri() tport_wakeup_pri(0x7f9a16103a10): events IN
+2019-07-24 12:56:01.253285 tport.c:2892 tport_recv_event() tport_recv_event(0x7f9a16103a10)
+2019-07-24 12:56:01.253362 tport.c:3233 tport_recv_iovec() tport_recv_iovec(0x7f9a16103a10) msg 0x7f9a14d0b640 from (udp/175.25.50.122:5040) has 317 bytes, veclen = 1
+2019-07-24 12:56:01.253432 Client::write_handler - wrote 2754 bytes: system:0
+2019-07-24 12:56:01.253590 recv 301 bytes from udp/[175.25.50.122]:5060 at 12:56:01.253431:
+SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 175.25.50.122:5040;rport=5040;branch=z9hG4bKQBXDK167S4Zyc
+From: <sip:175.25.50.122:5040>;tag=te7BFFy5H9S9F
+To: <sip:drachtio@175.25.50.122:5060>
+Call-ID: e72e3b84-28ef-1238-92ac-571cd9067103
+CSeq: 7445288 INVITE
+User-Agent: drachtio MRF
+Content-Length: 0
+ 
+2019-07-24 12:56:01.253696 tport.c:3051 tport_deliver() tport_deliver(0x7f9a16103a10): msg 0x7f9a14d0b640 (301 bytes) from udp/175.25.50.122:5040 next=0x0
+2019-07-24 12:56:01.253752 nta.c:3448 agent_recv_response() nta: received 100 Trying for INVITE (7445288)
+2019-07-24 12:56:01.253808 nta.c:3515 agent_recv_response() nta: 100 Trying is going to a transaction
+2019-07-24 12:56:01.253881 nta.c:9734 outgoing_estimate_delay() nta_outgoing: RTT is 2.32 ms
+2019-07-24 12:56:01.253967 tport.c:4261 tport_release() tport_release(0x7f9a16103a10): 0x7f9a161067b0 by 0x7f9a16107300 with 0x7f9a14d0b640 (preliminary)
+2019-07-24 12:56:01.259505 tport.c:2777 tport_wakeup_pri() tport_wakeup_pri(0x7f9a16103a10): events IN
+2019-07-24 12:56:01.259591 tport.c:2892 tport_recv_event() tport_recv_event(0x7f9a16103a10)
+2019-07-24 12:56:01.259651 tport.c:3233 tport_recv_iovec() tport_recv_iovec(0x7f9a16103a10) msg 0x7f9a16107890 from (udp/175.25.50.122:5040) has 1621 bytes, veclen = 1
+2019-07-24 12:56:01.260150 recv 1605 bytes from udp/[175.25.50.122]:5060 at 12:56:01.259714:
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 175.25.50.122:5040;rport=5040;branch=z9hG4bKQBXDK167S4Zyc
+From: <sip:175.25.50.122:5040>;tag=te7BFFy5H9S9F
+To: <sip:drachtio@175.25.50.122:5060>;tag=3DQD9NBKrcg9r
+Call-ID: e72e3b84-28ef-1238-92ac-571cd9067103
+CSeq: 7445288 INVITE
+Contact: <sip:drachtio@175.25.50.122:5060;transport=udp>
+User-Agent: drachtio MRF
+Accept: application/sdp
+Allow: INVITE, ACK, BYE, CANCEL, OPTIONS, MESSAGE, INFO, UPDATE, REGISTER, REFER, NOTIFY
+Supported: path, replaces
+Allow-Events: talk, hold, conference, refer
+Content-Type: application/sdp
+Content-Disposition: session
+Content-Length: 888
+Remote-Party-ID: "drachtio" <sip:drachtio@175.25.50.122>;party=calling;privacy=off;screen=no
+
+v=0
+o=FreeSWITCH 1563977039 1563977040 IN IP4 175.25.50.122
+s=FreeSWITCH
+c=IN IP4 175.25.50.122
+t=0 0
+a=msid-semantic: WMS XF4HEwqxc1N9vFm0RZ2Ei8nN4wxvyRkn
+m=audio 21122 UDP/TLS/RTP/SAVPF 111 110
+a=rtpmap:111 opus/48000/2
+a=fmtp:111 useinbandfec=1; minptime=10
+a=rtpmap:110 telephone-event/48000
+a=ptime:20
+a=fingerprint:sha-256 03:EF:E0:C3:7F:8A:48:FF:B3:CE:7E:E1:E0:D6:52:AD:F2:BC:41:96:0E:AB:68:B1:C4:C3:53:3A:84:F1:B5:EF
+a=setup:active
+a=rtcp-mux
+a=rtcp:21122 IN IP4 175.25.50.122
+a=ice-ufrag:J6sLobWXwtoWuPfr
+a=ice-pwd:Ctse8Evo4eN7hGCxDfqj4Raa
+a=candidate:7274137305 1 udp 659136 175.25.50.122 21122 typ host generation 0
+a=end-of-candidates
+a=ssrc:1854687313 cname:3ghPQNdeKyBnMTA1
+a=ssrc:1854687313 msid:XF4HEwqxc1N9vFm0RZ2Ei8nN4wxvyRkn a0
+a=ssrc:1854687313 mslabel:XF4HEwqxc1N9vFm0RZ2Ei8nN4wxvyRkn
+a=ssrc:1854687313 label:XF4HEwqxc1N9vFm0RZ2Ei8nN4wxvyRkna0 
+2019-07-24 12:56:01.260254 tport.c:3051 tport_deliver() tport_deliver(0x7f9a16103a10): msg 0x7f9a16107890 (1605 bytes) from udp/175.25.50.122:5040 next=0x0
+2019-07-24 12:56:01.260320 nta.c:3448 agent_recv_response() nta: received 200 OK for INVITE (7445288)
+2019-07-24 12:56:01.260361 nta.c:3515 agent_recv_response() nta: 200 OK is going to a transaction
+2019-07-24 12:56:01.260398 tport.c:4261 tport_release() tport_release(0x7f9a16103a10): 0x7f9a161067b0 by 0x7f9a16107300 with 0x7f9a16107890
+2019-07-24 12:56:01.260434 SipDialogController::processResponseOutsideDialog
+2019-07-24 12:56:01.260486 SipDialogController::processResponse - adding dialog id: e72e3b84-28ef-1238-92ac-571cd9067103;from-tag=te7BFFy5H9S9F
+2019-07-24 12:56:01.260552 ClientController::addDialogForTransaction - added dialog (uac), now tracking: 3 dialogs and 1 app transactions
+2019-07-24 12:56:01.260594 ClientController::addDialogForTransaction - transaction id b38572a4-e601-41d0-99a6-63700a057965 has associated dialog e72e3b84-28ef-1238-92ac-571cd9067103;from-tag=te7BFFy5H9S9F
+2019-07-24 12:56:01.260645 timerD: Adding entry to go off in 32500ms
+2019-07-24 12:56:01.260685 timerD: Adding entry to the tail of the queue: length 2
+2019-07-24 12:56:01.260723 TimerDHandler::addInvite 0x7f9a16107300, e72e3b84-28ef-1238-92ac-571cd90671037445288
+2019-07-24 12:56:01.260776 ClientController::removeAppTransaction: transactionId b38572a4-e601-41d0-99a6-63700a057965; size: 0
+2019-07-24 12:56:01.260974 Client::write_handler - wrote 1802 bytes: system:0
+2019-07-24 12:56:01.265140 Client::read_handler read: 3a51e24c-36be-416d-afdd-b0c0e3aa87e0|sip||e72e3b84-28ef-1238-92ac-571cd9067103;from-tag=te7BFFy5H9S9F
+ACK sip:drachtio@175.25.50.122:5060 SIP/2.0
+Content-Length: 0
+
+
+
+2019-07-24 12:56:01.265306 Client::processMessage - got request with 4 tokens
+2019-07-24 12:56:01.265375 Client::processMessage - request id 3a51e24c-36be-416d-afdd-b0c0e3aa87e0, request type: sip transaction id: , dialog id: e72e3b84-28ef-1238-92ac-571cd9067103;from-tag=te7BFFy5H9S9F
+2019-07-24 12:56:01.265440 Client::processMessage - sending a request inside a dialog (dialogId provided)
+2019-07-24 12:56:01.265588 ClientController::addApiRequest: clientMsgId 3a51e24c-36be-416d-afdd-b0c0e3aa87e0; size: 1
+2019-07-24 12:56:01.265713 SipDialogController::doSendRequestInsideDialog dialog id: e72e3b84-28ef-1238-92ac-571cd9067103;from-tag=te7BFFy5H9S9F
+2019-07-24 12:56:01.265895 SipDialogController::doSendRequestInsideDialog - defaulting request uri to sip:drachtio@175.25.50.122:5060;transport=udp
+2019-07-24 12:56:01.265965 DrachtioController::findTportForSubscription: no transport found for drachtio@175.25.50.122
+2019-07-24 12:56:01.266058 nta.c:2813 nta_tpn_by_url() nta: selecting scheme sip
+2019-07-24 12:56:01.266142 tport.c:3285 tport_tsend() tport_tsend(0x7f9a16103a10) tpn = udp/175.25.50.122:5060
+2019-07-24 12:56:01.266215 tport.c:4085 tport_resolve() tport_resolve addrinfo = 175.25.50.122:5060
+2019-07-24 12:56:01.266327 tport.c:3531 tport_send_msg() tport_vsend returned 342
+2019-07-24 12:56:01.266506 send 342 bytes to udp/[175.25.50.122]:5060 at 12:56:01.266275:
+ACK sip:drachtio@175.25.50.122:5060;transport=udp SIP/2.0
+Via: SIP/2.0/UDP 175.25.50.122:5040;rport;branch=z9hG4bKrmp6mvQBQDpHr
+Max-Forwards: 70
+From: <sip:175.25.50.122:5040>;tag=te7BFFy5H9S9F
+To: <sip:drachtio@175.25.50.122:5060>;tag=3DQD9NBKrcg9r
+Call-ID: e72e3b84-28ef-1238-92ac-571cd9067103
+CSeq: 7445288 ACK
+Content-Length: 0
+ 
+2019-07-24 12:56:01.266571 nta.c:8470 outgoing_send() nta: sent ACK (7445288) to udp/175.25.50.122:5060
+2019-07-24 12:56:01.266633 TimerDHandler::addAck 0x7f9a14c0e7d0, e72e3b84-28ef-1238-92ac-571cd90671037445288
+2019-07-24 12:56:01.266688 SipDialogController::doSendRequestInsideDialog - clearing IIP that we generated as uac
+2019-07-24 12:56:01.266741 SipDialogController::clearIIP:  clearing leg 0x7f9a16104f80, irq: 0x0, orq: 0x7f9a16107300, rel: 0x0
+2019-07-24 12:56:01.266798 SipDialogController::clearIIP:  clearing m_mapOrq2IIP for leg 0x7f9a16104f80
+2019-07-24 12:56:01.266886 ClientController::removeApiRequest: clientMsgId 3a51e24c-36be-416d-afdd-b0c0e3aa87e0; size: 0
+2019-07-24 12:56:01.267128 Client::write_handler - wrote 536 bytes: system:0
+2019-07-24 12:56:02.257660 nta.c:1357 agent_timer() nta: timer set next to 16360 ms
